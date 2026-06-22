@@ -58,3 +58,9 @@ bin
 obj
 Debug
 packages
+
+# Bonsai environment and build artifacts
+.bonsai/Bonsai.exe*
+.bonsai/Packages/
+.bonsai/Settings/
+/artifacts/
