@@ -14,15 +14,18 @@ namespace Harp.TimestampGeneratorGen3
         /// <param name="portName">
         /// The name of the serial port used to communicate with the Harp device.
         /// </param>
+        /// <param name="cancellationToken">
+        /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
+        /// </param>
         /// <returns>
         /// A task that represents the asynchronous initialization operation. The value of
         /// the <see cref="Task{TResult}.Result"/> parameter contains a new instance of
         /// the <see cref="AsyncDevice"/> class.
         /// </returns>
-        public static async Task<AsyncDevice> CreateAsync(string portName)
+        public static async Task<AsyncDevice> CreateAsync(string portName, CancellationToken cancellationToken = default)
         {
             var device = new AsyncDevice(portName);
-            var whoAmI = await device.ReadWhoAmIAsync();
+            var whoAmI = await device.ReadWhoAmIAsync(cancellationToken);
             if (whoAmI != Device.WhoAmI)
             {
                 var errorMessage = string.Format(
@@ -46,14 +49,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the contents of the Config register.
+        /// Asynchronously reads the contents of the <see cref="Config"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the register payload.
         /// </returns>
         public async Task<ConfigurationFlags> ReadConfigAsync(CancellationToken cancellationToken = default)
         {
@@ -62,14 +65,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the timestamped contents of the Config register.
+        /// Asynchronously reads the timestamped contents of the <see cref="Config"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the timestamped register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the timestamped register payload.
         /// </returns>
         public async Task<Timestamped<ConfigurationFlags>> ReadTimestampedConfigAsync(CancellationToken cancellationToken = default)
         {
@@ -78,9 +81,9 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously writes a value to the Config register.
+        /// Asynchronously writes a value to the <see cref="Config"/> register.
         /// </summary>
-        /// <param name="value">The value to be stored in the register.</param>
+        /// <param name="value">The value to write in the register.</param>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
@@ -92,14 +95,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the contents of the DevicesConnected register.
+        /// Asynchronously reads the contents of the <see cref="DevicesConnected"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the register payload.
         /// </returns>
         public async Task<ConnectedDevices> ReadDevicesConnectedAsync(CancellationToken cancellationToken = default)
         {
@@ -108,14 +111,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the timestamped contents of the DevicesConnected register.
+        /// Asynchronously reads the timestamped contents of the <see cref="DevicesConnected"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the timestamped register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the timestamped register payload.
         /// </returns>
         public async Task<Timestamped<ConnectedDevices>> ReadTimestampedDevicesConnectedAsync(CancellationToken cancellationToken = default)
         {
@@ -124,14 +127,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the contents of the RepeaterStatus register.
+        /// Asynchronously reads the contents of the <see cref="RepeaterStatus"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the register payload.
         /// </returns>
         public async Task<RepeaterFlags> ReadRepeaterStatusAsync(CancellationToken cancellationToken = default)
         {
@@ -140,14 +143,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the timestamped contents of the RepeaterStatus register.
+        /// Asynchronously reads the timestamped contents of the <see cref="RepeaterStatus"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the timestamped register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the timestamped register payload.
         /// </returns>
         public async Task<Timestamped<RepeaterFlags>> ReadTimestampedRepeaterStatusAsync(CancellationToken cancellationToken = default)
         {
@@ -156,9 +159,9 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously writes a value to the RepeaterStatus register.
+        /// Asynchronously writes a value to the <see cref="RepeaterStatus"/> register.
         /// </summary>
-        /// <param name="value">The value to be stored in the register.</param>
+        /// <param name="value">The value to write in the register.</param>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
@@ -170,14 +173,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the contents of the BatteryRate register.
+        /// Asynchronously reads the contents of the <see cref="BatteryRate"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the register payload.
         /// </returns>
         public async Task<BatteryRateConfiguration> ReadBatteryRateAsync(CancellationToken cancellationToken = default)
         {
@@ -186,14 +189,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the timestamped contents of the BatteryRate register.
+        /// Asynchronously reads the timestamped contents of the <see cref="BatteryRate"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the timestamped register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the timestamped register payload.
         /// </returns>
         public async Task<Timestamped<BatteryRateConfiguration>> ReadTimestampedBatteryRateAsync(CancellationToken cancellationToken = default)
         {
@@ -202,9 +205,9 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously writes a value to the BatteryRate register.
+        /// Asynchronously writes a value to the <see cref="BatteryRate"/> register.
         /// </summary>
-        /// <param name="value">The value to be stored in the register.</param>
+        /// <param name="value">The value to write in the register.</param>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
@@ -216,14 +219,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the contents of the Battery register.
+        /// Asynchronously reads the contents of the <see cref="Battery"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the register payload.
         /// </returns>
         public async Task<float> ReadBatteryAsync(CancellationToken cancellationToken = default)
         {
@@ -232,14 +235,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the timestamped contents of the Battery register.
+        /// Asynchronously reads the timestamped contents of the <see cref="Battery"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the timestamped register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the timestamped register payload.
         /// </returns>
         public async Task<Timestamped<float>> ReadTimestampedBatteryAsync(CancellationToken cancellationToken = default)
         {
@@ -248,14 +251,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the contents of the BatteryThresholdLow register.
+        /// Asynchronously reads the contents of the <see cref="BatteryThresholdLow"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the register payload.
         /// </returns>
         public async Task<float> ReadBatteryThresholdLowAsync(CancellationToken cancellationToken = default)
         {
@@ -264,14 +267,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the timestamped contents of the BatteryThresholdLow register.
+        /// Asynchronously reads the timestamped contents of the <see cref="BatteryThresholdLow"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the timestamped register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the timestamped register payload.
         /// </returns>
         public async Task<Timestamped<float>> ReadTimestampedBatteryThresholdLowAsync(CancellationToken cancellationToken = default)
         {
@@ -280,9 +283,9 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously writes a value to the BatteryThresholdLow register.
+        /// Asynchronously writes a value to the <see cref="BatteryThresholdLow"/> register.
         /// </summary>
-        /// <param name="value">The value to be stored in the register.</param>
+        /// <param name="value">The value to write in the register.</param>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
@@ -294,14 +297,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the contents of the BatteryThresholdHigh register.
+        /// Asynchronously reads the contents of the <see cref="BatteryThresholdHigh"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the register payload.
         /// </returns>
         public async Task<float> ReadBatteryThresholdHighAsync(CancellationToken cancellationToken = default)
         {
@@ -310,14 +313,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the timestamped contents of the BatteryThresholdHigh register.
+        /// Asynchronously reads the timestamped contents of the <see cref="BatteryThresholdHigh"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the timestamped register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the timestamped register payload.
         /// </returns>
         public async Task<Timestamped<float>> ReadTimestampedBatteryThresholdHighAsync(CancellationToken cancellationToken = default)
         {
@@ -326,9 +329,9 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously writes a value to the BatteryThresholdHigh register.
+        /// Asynchronously writes a value to the <see cref="BatteryThresholdHigh"/> register.
         /// </summary>
-        /// <param name="value">The value to be stored in the register.</param>
+        /// <param name="value">The value to write in the register.</param>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
@@ -340,14 +343,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the contents of the BatteryCalibration0 register.
+        /// Asynchronously reads the contents of the <see cref="BatteryCalibration0"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the register payload.
         /// </returns>
         public async Task<ushort> ReadBatteryCalibration0Async(CancellationToken cancellationToken = default)
         {
@@ -356,14 +359,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the timestamped contents of the BatteryCalibration0 register.
+        /// Asynchronously reads the timestamped contents of the <see cref="BatteryCalibration0"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the timestamped register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the timestamped register payload.
         /// </returns>
         public async Task<Timestamped<ushort>> ReadTimestampedBatteryCalibration0Async(CancellationToken cancellationToken = default)
         {
@@ -372,9 +375,9 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously writes a value to the BatteryCalibration0 register.
+        /// Asynchronously writes a value to the <see cref="BatteryCalibration0"/> register.
         /// </summary>
-        /// <param name="value">The value to be stored in the register.</param>
+        /// <param name="value">The value to write in the register.</param>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
@@ -386,14 +389,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the contents of the BatteryCalibration1 register.
+        /// Asynchronously reads the contents of the <see cref="BatteryCalibration1"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the register payload.
         /// </returns>
         public async Task<ushort> ReadBatteryCalibration1Async(CancellationToken cancellationToken = default)
         {
@@ -402,14 +405,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the timestamped contents of the BatteryCalibration1 register.
+        /// Asynchronously reads the timestamped contents of the <see cref="BatteryCalibration1"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the timestamped register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the timestamped register payload.
         /// </returns>
         public async Task<Timestamped<ushort>> ReadTimestampedBatteryCalibration1Async(CancellationToken cancellationToken = default)
         {
@@ -418,9 +421,9 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously writes a value to the BatteryCalibration1 register.
+        /// Asynchronously writes a value to the <see cref="BatteryCalibration1"/> register.
         /// </summary>
-        /// <param name="value">The value to be stored in the register.</param>
+        /// <param name="value">The value to write in the register.</param>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
@@ -432,14 +435,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the contents of the Timer register.
+        /// Asynchronously reads the contents of the <see cref="Timer"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the register payload.
         /// </returns>
         public async Task<uint> ReadTimerAsync(CancellationToken cancellationToken = default)
         {
@@ -448,14 +451,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the timestamped contents of the Timer register.
+        /// Asynchronously reads the timestamped contents of the <see cref="Timer"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the timestamped register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the timestamped register payload.
         /// </returns>
         public async Task<Timestamped<uint>> ReadTimestampedTimerAsync(CancellationToken cancellationToken = default)
         {
@@ -464,9 +467,9 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously writes a value to the Timer register.
+        /// Asynchronously writes a value to the <see cref="Timer"/> register.
         /// </summary>
-        /// <param name="value">The value to be stored in the register.</param>
+        /// <param name="value">The value to write in the register.</param>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
@@ -478,14 +481,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the contents of the TimerFrequency register.
+        /// Asynchronously reads the contents of the <see cref="TimerFrequency"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the register payload.
         /// </returns>
         public async Task<TimerRate> ReadTimerFrequencyAsync(CancellationToken cancellationToken = default)
         {
@@ -494,14 +497,14 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously reads the timestamped contents of the TimerFrequency register.
+        /// Asynchronously reads the timestamped contents of the <see cref="TimerFrequency"/> register.
         /// </summary>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>
         /// <returns>
-        /// A task that represents the asynchronous read operation. The <see cref="Task{TResult}.Result"/>
-        /// property contains the timestamped register payload.
+        /// A task that represents the asynchronous read operation. The task result contains
+        /// the timestamped register payload.
         /// </returns>
         public async Task<Timestamped<TimerRate>> ReadTimestampedTimerFrequencyAsync(CancellationToken cancellationToken = default)
         {
@@ -510,9 +513,9 @@ namespace Harp.TimestampGeneratorGen3
         }
 
         /// <summary>
-        /// Asynchronously writes a value to the TimerFrequency register.
+        /// Asynchronously writes a value to the <see cref="TimerFrequency"/> register.
         /// </summary>
-        /// <param name="value">The value to be stored in the register.</param>
+        /// <param name="value">The value to write in the register.</param>
         /// <param name="cancellationToken">
         /// A <see cref="CancellationToken"/> which can be used to cancel the operation.
         /// </param>

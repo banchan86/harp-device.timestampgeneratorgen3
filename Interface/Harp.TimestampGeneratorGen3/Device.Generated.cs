@@ -70,7 +70,7 @@ namespace Harp.TimestampGeneratorGen3
     /// describing the <see cref="TimestampGeneratorGen3"/> device registers.
     /// </summary>
     [Description("Returns the contents of the metadata file describing the TimestampGeneratorGen3 device registers.")]
-    public partial class GetMetadata : Source<string>
+    public partial class GetDeviceMetadata : Source<string>
     {
         /// <summary>
         /// Returns an observable sequence with the contents of the metadata file
@@ -104,6 +104,157 @@ namespace Harp.TimestampGeneratorGen3
         public override IObservable<IGroupedObservable<Type, HarpMessage>> Process(IObservable<HarpMessage> source)
         {
             return source.GroupBy(message => Device.RegisterMap[message.Address]);
+        }
+    }
+
+    /// <summary>
+    /// Represents an operator that writes the sequence of <see cref="TimestampGeneratorGen3"/>" messages
+    /// to the standard Harp storage format.
+    /// </summary>
+    [DefaultProperty(nameof(Path))]
+    [Description("Writes the sequence of TimestampGeneratorGen3 messages to the standard Harp storage format.")]
+    public partial class DeviceDataWriter : Sink<HarpMessage>, INamedElement
+    {
+        const string BinaryExtension = ".bin";
+        const string MetadataFileName = "device.yml";
+        readonly Bonsai.Harp.MessageWriter writer = new();
+
+        string INamedElement.Name => nameof(TimestampGeneratorGen3) + "DataWriter";
+
+        /// <summary>
+        /// Gets or sets the relative or absolute path on which to save the message data.
+        /// </summary>
+        [Description("The relative or absolute path of the directory on which to save the message data.")]
+        [Editor("Bonsai.Design.SaveFileNameEditor, Bonsai.Design", DesignTypes.UITypeEditor)]
+        public string Path
+        {
+            get => System.IO.Path.GetDirectoryName(writer.FileName);
+            set => writer.FileName = System.IO.Path.Combine(value, nameof(TimestampGeneratorGen3) + BinaryExtension);
+        }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether element writing should be buffered. If <see langword="true"/>,
+        /// the write commands will be queued in memory as fast as possible and will be processed
+        /// by the writer in a different thread. Otherwise, writing will be done in the same
+        /// thread in which notifications arrive.
+        /// </summary>
+        [Description("Indicates whether writing should be buffered.")]
+        public bool Buffered
+        {
+            get => writer.Buffered;
+            set => writer.Buffered = value;
+        }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether to overwrite the output file if it already exists.
+        /// </summary>
+        [Description("Indicates whether to overwrite the output file if it already exists.")]
+        public bool Overwrite
+        {
+            get => writer.Overwrite;
+            set => writer.Overwrite = value;
+        }
+
+        /// <summary>
+        /// Gets or sets a value specifying how the message filter will use the matching criteria.
+        /// </summary>
+        [Description("Specifies how the message filter will use the matching criteria.")]
+        public FilterType FilterType
+        {
+            get => writer.FilterType;
+            set => writer.FilterType = value;
+        }
+
+        /// <summary>
+        /// Gets or sets a value specifying the expected message type. If no value is
+        /// specified, all messages will be accepted.
+        /// </summary>
+        [Description("Specifies the expected message type. If no value is specified, all messages will be accepted.")]
+        public MessageType? MessageType
+        {
+            get => writer.MessageType;
+            set => writer.MessageType = value;
+        }
+
+        private IObservable<TSource> WriteDeviceMetadata<TSource>(IObservable<TSource> source)
+        {
+            var basePath = Path;
+            if (string.IsNullOrEmpty(basePath))
+                return source;
+
+            var metadataPath = System.IO.Path.Combine(basePath, MetadataFileName);
+            return Observable.Create<TSource>(observer =>
+            {
+                Bonsai.IO.PathHelper.EnsureDirectory(metadataPath);
+                if (System.IO.File.Exists(metadataPath) && !Overwrite)
+                {
+                    throw new System.IO.IOException(string.Format("The file '{0}' already exists.", metadataPath));
+                }
+
+                System.IO.File.WriteAllText(metadataPath, Device.Metadata);
+                return source.SubscribeSafe(observer);
+            });
+        }
+
+        /// <summary>
+        /// Writes each Harp message in the sequence to the specified binary file, and the
+        /// contents of the device metadata file to a separate text file.
+        /// </summary>
+        /// <param name="source">The sequence of messages to write to the file.</param>
+        /// <returns>
+        /// An observable sequence that is identical to the <paramref name="source"/>
+        /// sequence but where there is an additional side effect of writing the
+        /// messages to a raw binary file, and the contents of the device metadata file
+        /// to a separate text file.
+        /// </returns>
+        public override IObservable<HarpMessage> Process(IObservable<HarpMessage> source)
+        {
+            return source.Publish(ps => ps.Merge(
+                WriteDeviceMetadata(writer.Process(ps.GroupBy(message => message.Address)))
+                .IgnoreElements()
+                .Cast<HarpMessage>()));
+        }
+
+        /// <summary>
+        /// Writes each Harp message in the sequence of observable groups to the
+        /// corresponding binary file, where the name of each file is generated from
+        /// the common group register address. The contents of the device metadata file are
+        /// written to a separate text file.
+        /// </summary>
+        /// <param name="source">
+        /// A sequence of observable groups, each of which corresponds to a unique register
+        /// address.
+        /// </param>
+        /// <returns>
+        /// An observable sequence that is identical to the <paramref name="source"/>
+        /// sequence but where there is an additional side effect of writing the Harp
+        /// messages in each group to the corresponding file, and the contents of the device
+        /// metadata file to a separate text file.
+        /// </returns>
+        public IObservable<IGroupedObservable<int, HarpMessage>> Process(IObservable<IGroupedObservable<int, HarpMessage>> source)
+        {
+            return WriteDeviceMetadata(writer.Process(source));
+        }
+
+        /// <summary>
+        /// Writes each Harp message in the sequence of observable groups to the
+        /// corresponding binary file, where the name of each file is generated from
+        /// the common group register name. The contents of the device metadata file are
+        /// written to a separate text file.
+        /// </summary>
+        /// <param name="source">
+        /// A sequence of observable groups, each of which corresponds to a unique register
+        /// type.
+        /// </param>
+        /// <returns>
+        /// An observable sequence that is identical to the <paramref name="source"/>
+        /// sequence but where there is an additional side effect of writing the Harp
+        /// messages in each group to the corresponding file, and the contents of the device
+        /// metadata file to a separate text file.
+        /// </returns>
+        public IObservable<IGroupedObservable<Type, HarpMessage>> Process(IObservable<IGroupedObservable<Type, HarpMessage>> source)
+        {
+            return WriteDeviceMetadata(writer.Process(source));
         }
     }
 
@@ -1961,21 +2112,25 @@ namespace Harp.TimestampGeneratorGen3
         /// <summary>
         /// Starts battery cycle to extend batteries life.
         /// </summary>
+        [Description("Starts battery cycle to extend batteries life.")]
         StartBatteryCycle = 0x1,
 
         /// <summary>
         /// Starts to discharge right away.
         /// </summary>
+        [Description("Starts to discharge right away.")]
         StartDischarge = 0x2,
 
         /// <summary>
         /// Starts to charge right away.
         /// </summary>
+        [Description("Starts to charge right away.")]
         StartCharge = 0x4,
 
         /// <summary>
         /// Stop any control of the battery and resume normal function.
         /// </summary>
+        [Description("Stop any control of the battery and resume normal function.")]
         Stop = 0x8
     }
 
@@ -2026,5 +2181,110 @@ namespace Harp.TimestampGeneratorGen3
         Timer200Hz = 3,
         Timer500Hz = 4,
         Timer1000Hz = 5
+    }
+
+    internal static partial class PayloadMarshal
+    {
+        internal static T[] GetSubArray<T>(T[] array, int offset, int count)
+        {
+            var result = new T[count];
+            Array.Copy(array, offset, result, 0, count);
+            return result;
+        }
+
+        internal static byte ReadByte(ArraySegment<byte> segment) => segment.Array[segment.Offset];
+
+        internal static sbyte ReadSByte(ArraySegment<byte> segment) => (sbyte)segment.Array[segment.Offset];
+
+        internal static ushort ReadUInt16(ArraySegment<byte> segment) => BitConverter.ToUInt16(segment.Array, segment.Offset);
+
+        internal static short ReadInt16(ArraySegment<byte> segment) => BitConverter.ToInt16(segment.Array, segment.Offset);
+
+        internal static uint ReadUInt32(ArraySegment<byte> segment) => BitConverter.ToUInt32(segment.Array, segment.Offset);
+
+        internal static int ReadInt32(ArraySegment<byte> segment) => BitConverter.ToInt32(segment.Array, segment.Offset);
+
+        internal static ulong ReadUInt64(ArraySegment<byte> segment) => BitConverter.ToUInt64(segment.Array, segment.Offset);
+
+        internal static long ReadInt64(ArraySegment<byte> segment) => BitConverter.ToInt64(segment.Array, segment.Offset);
+
+        internal static float ReadSingle(ArraySegment<byte> segment) => BitConverter.ToSingle(segment.Array, segment.Offset);
+
+        internal static string ReadUtf8String(ArraySegment<byte> segment)
+        {
+            var count = Array.IndexOf(segment.Array, (byte)0, segment.Offset, segment.Count) - segment.Offset;
+            return System.Text.Encoding.UTF8.GetString(segment.Array, segment.Offset, count < 0 ? segment.Count : count);
+        }
+
+        internal static void Write(ArraySegment<byte> segment, byte value) => segment.Array[segment.Offset] = value;
+
+        internal static void Write(ArraySegment<byte> segment, sbyte value) => segment.Array[segment.Offset] = (byte)value;
+
+        internal static void Write(ArraySegment<byte> segment, ushort value)
+        {
+            segment.Array[segment.Offset] = (byte)value;
+            segment.Array[segment.Offset + 1] = (byte)(value >> 8);
+        }
+
+        internal static void Write(ArraySegment<byte> segment, short value)
+        {
+            segment.Array[segment.Offset] = (byte)value;
+            segment.Array[segment.Offset + 1] = (byte)(value >> 8);
+        }
+
+        internal static void Write(ArraySegment<byte> segment, uint value)
+        {
+            segment.Array[segment.Offset] = (byte)value;
+            segment.Array[segment.Offset + 1] = (byte)(value >> 8);
+            segment.Array[segment.Offset + 2] = (byte)(value >> 16);
+            segment.Array[segment.Offset + 3] = (byte)(value >> 24);
+        }
+
+        internal static void Write(ArraySegment<byte> segment, int value)
+        {
+            segment.Array[segment.Offset] = (byte)value;
+            segment.Array[segment.Offset + 1] = (byte)(value >> 8);
+            segment.Array[segment.Offset + 2] = (byte)(value >> 16);
+            segment.Array[segment.Offset + 3] = (byte)(value >> 24);
+        }
+
+        internal static void Write(ArraySegment<byte> segment, ulong value)
+        {
+            segment.Array[segment.Offset] = (byte)value;
+            segment.Array[segment.Offset + 1] = (byte)(value >> 8);
+            segment.Array[segment.Offset + 2] = (byte)(value >> 16);
+            segment.Array[segment.Offset + 3] = (byte)(value >> 24);
+            segment.Array[segment.Offset + 4] = (byte)(value >> 32);
+            segment.Array[segment.Offset + 5] = (byte)(value >> 40);
+            segment.Array[segment.Offset + 6] = (byte)(value >> 48);
+            segment.Array[segment.Offset + 7] = (byte)(value >> 56);
+        }
+
+        internal static void Write(ArraySegment<byte> segment, long value)
+        {
+            segment.Array[segment.Offset] = (byte)value;
+            segment.Array[segment.Offset + 1] = (byte)(value >> 8);
+            segment.Array[segment.Offset + 2] = (byte)(value >> 16);
+            segment.Array[segment.Offset + 3] = (byte)(value >> 24);
+            segment.Array[segment.Offset + 4] = (byte)(value >> 32);
+            segment.Array[segment.Offset + 5] = (byte)(value >> 40);
+            segment.Array[segment.Offset + 6] = (byte)(value >> 48);
+            segment.Array[segment.Offset + 7] = (byte)(value >> 56);
+        }
+
+        internal static unsafe void Write(ArraySegment<byte> segment, float value) => Write(segment, *(int*)&value);
+
+        internal static unsafe void Write(ArraySegment<byte> segment, string value) =>
+            System.Text.Encoding.UTF8.GetBytes(value, 0, Math.Min(value.Length, segment.Count), segment.Array, segment.Offset);
+
+        internal static void Write<T>(ArraySegment<byte> segment, T[] values) where T : unmanaged
+        {
+            Buffer.BlockCopy(values, 0, segment.Array, segment.Offset, segment.Count);
+        }
+
+        internal static void Write<T>(ArraySegment<T> segment, T[] values)
+        {
+            Array.Copy(values, 0, segment.Array, segment.Offset, segment.Count);
+        }
     }
 }
