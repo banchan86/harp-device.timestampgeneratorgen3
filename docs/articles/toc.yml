@@ -1,3 +1,25 @@
 - name: Introduction
-- name: Timestamp Generator Gen3
+- name: Overview
   href: ../index.md
+- name: Timestamp Generator Gen3
+  href: timestampgeneratorgen3-overview.md
+- name: Getting Started
+- name: Ports and Connections
+  href: connections.md
+- name: Installation
+  href: installation.md
+- name: Bonsai
+  href: harp-bonsai.md
+- name: Bonsai Workflows
+- name: Generate Timer Events
+  href: generate-timer-events.md
+- name: Monitor Device Status
+  href: monitor-device-status.md
+- name: Manage Battery Charging
+  href: manage-battery-charging.md
+- name: Data Management
+- name: Analysis
+  href: visualize-data.md
+- name: Troubleshooting
+- name: Indicators and Errors
+  href: troubleshooting.md
