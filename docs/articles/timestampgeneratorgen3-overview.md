@@ -22,4 +22,7 @@ The Timestamp Generator Gen3 is a Harp clock synchronization device.
 - Battery default charging thresholds: 3.65 V to 3.75 V ([configurable](manage-battery-charging.md))
 - Battery charging safety limits: 3.35 V to 4.1 V
 
+> [!NOTE]
+> There was no existing hardware or firmware version table, but I think it is worth adding one and also a note on the previous generations (what happened to gen1 and gen2).
+
 [!INCLUDE [](version-footer.md)]

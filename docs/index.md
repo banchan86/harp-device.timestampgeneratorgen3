@@ -14,7 +14,7 @@ The Timestamp Generator Gen3 provides:
 - [Bonsai](https://bonsai-rx.org/) integration for flexible experiment acquisition and control.
 
 > [!NOTE]
-> To consider: Worth adding a note on the previous generations and mention the other timestamp generators with links?
+> To consider: mention and link out to other timestamp generators/clock synchronizers?
 
 ## Getting a Device
 
