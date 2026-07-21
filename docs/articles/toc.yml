@@ -19,7 +19,7 @@
   href: manage-battery-charging.md
 - name: Data Management
 - name: Logging and Analysis
-  href: visualize-data.md
+  href: logging-analysis.md
 - name: Troubleshooting
 - name: Indicators and Errors
   href: troubleshooting.md

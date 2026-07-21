@@ -54,7 +54,7 @@ To read the battery charge or battery rate events, subscribe to the device event
 Run the workflow and press <kbd>A</kbd> to request the current battery voltage on demand, or press <kbd>S</kbd> to set the battery rate and receive a new value at regular intervals. The battery voltage will appear in the visualizer window.
 
 > [!NOTE]
-> If the [battery switch](connections.md#ports-and-controls) is off or the battery isn't detected, a battery read will return zero and no events will be sent.
+> If the [`BATTERY` switch](connections.md#ports-and-controls) is off or the battery isn't detected, a battery read will return zero and no events will be sent.
 
 ### Check Connected Devices
 

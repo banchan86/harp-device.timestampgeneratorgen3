@@ -22,17 +22,11 @@ At power-up the device runs a short LED animation (each LED lights in sequence t
 
 If the device has a low battery, the **STATE** LED will also flash rapidly (5 Hz for 2 seconds) after the startup sequence.
 
-**ON** - Lit when the device is running from external (USB) power. Off when running from the battery.
+**ON** - Lit when the device is running from external (USB) power. Off when running from the battery. If the battery becomes depleted (≤ 3.25 V) with no external power, the `ON` LED blinks for a couple of seconds and the device turns itself off to protect the battery.
 
 > [!NOTE]
 > When running from the battery, some of the indicator LEDs will only flash briefly every few seconds to save power — the panel appearing mostly dark is normal in battery operation.
 
-
-### Battery Behavior
-
-- With the [BATTERY switch](connections.md#ports-and-controls) `ON`, the device keeps running (and keeps the clock alive) when external power is removed.
-- If the battery becomes depleted (≤ 3.25 V) with no external power, the `ON` LED blinks for a couple of seconds and the device turns itself off to protect the battery.
-- While a [battery cycle](manage-battery-charging.md) is running, the `OUT0`–`OUT2` and `OUT3`–`OUT5` LEDs blink in two alternating groups.
 
 ### COM Port Errors
 

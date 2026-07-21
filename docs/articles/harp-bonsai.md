@@ -26,8 +26,7 @@ Before beginning:
 - Click on the [`TimestampGeneratorGen3 (DeviceDataWriter)`] operator and set the `Path` property for the name and location of the save file (e.g. `Data\TimestampGeneratorGen3.harp`).
 - Press the "Start" button in Bonsai to run the workflow.
 
-
-The [`VisualizerWindow`] operator will automatically open a visualizer when the workflow starts. Press <kbd>A</kbd> to enable the `Timer` counter event at 50 Hz. Once the counter is enabled, you should see the counter If an error appears in Bonsai, check out the [troubleshooting](troubleshooting.md) section.
+The [`VisualizerWindow`] operator will automatically open a visualizer when the workflow starts. Press <kbd>A</kbd> to enable the `Timer` counter event at 50 Hz. Once the counter is enabled, you should see the counter. If an error appears in Bonsai, check out the [troubleshooting](troubleshooting.md) section.
 
 Otherwise, the device is ready to use! We suggest going through the "Bonsai Workflows" section if you are not familiar with using Harp devices in Bonsai.
 

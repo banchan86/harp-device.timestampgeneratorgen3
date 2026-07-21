@@ -16,7 +16,7 @@ These steps are only required the first time you connect the device to a new com
 
 # [harp-python](#tab/harp-python)
 
-The [harp-python](https://pypi.org/project/harp-python/) library provides a low-level interface to [read and manipulate](visualize-data.md) data from Harp devices. You can install it in a Python environment with:
+The [harp-python](https://pypi.org/project/harp-python/) library provides a low-level interface to [read and manipulate](logging-analysis.md) data from Harp devices. You can install it in a Python environment with:
 
 ```cmd
 pip install harp-python
