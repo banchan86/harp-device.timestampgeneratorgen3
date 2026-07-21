@@ -83,10 +83,10 @@ Run the workflow and press <kbd>D</kbd>. The timestamp attached to each event in
 > The `TimestampSeconds` register is one of the core registers shared by all Harp devices and is not available in the device-specific `Harp.TimestampGeneratorGen3` package. This workflow instead uses the [`CreateMessage (Bonsai.Harp)`] operator from the `Bonsai.Harp` base library.
 
 > [!NOTE]
-> The hardware clock will also reset if the device is disconnected while the battery is off.
+> The hardware clock will also reset if the device is disconnected while the [`BATTERY` switch](connections.md#ports-and-controls) is off.
 
 > [!WARNING]
-> Make sure the **Lock** toggle on the device is turned off before setting the clock. If the clock is locked, the device will throw an error when it receives the write command.
+> Make sure the device clock is [unlocked](connections.md#ports-and-controls) before setting the clock. If the clock is locked, the device will throw an error when it receives the write command.
 
 [!INCLUDE [](version-footer.md)]
 

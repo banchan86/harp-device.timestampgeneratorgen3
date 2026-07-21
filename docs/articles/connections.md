@@ -15,7 +15,7 @@ This article will cover the ports and controls on the Timestamp Generator Gen3, 
 
 | Hold time | Action | Indicator LED |
 | --- | --- | --- |
-| ~ 1 s | Check the battery level (requires **BATTERY** toggle to be switched to `ON`) | The battery level will be shown on the `OUT0`–`OUT2` LEDs for a few seconds (1 LED ≈ low, 3 LEDs ≈ well charged). <br><br> If the **Battery** toggle is off it will flash low as the battery is disconnected. |
+| ~ 1 s | Check the battery level (requires the **BATTERY** switch to be `ON`) | The battery level will be shown on the `OUT0`–`OUT2` LEDs for a few seconds (1 LED ≈ low, 3 LEDs ≈ well charged). <br><br> If the **BATTERY** switch is off it will flash low as the battery is disconnected. |
 | ~ 3 s | Lock or unlock the device clock. | `LOCK` LED will blink and remain on the chosen state |
 | ~ 6 s | Toggle between clock [generator and repeater](#connections) mode. The device will reboot into the new mode after the button is released. | The startup LED sequence will play after the reboot, then the `REPEAT` LED will toggle on or off |
 | ≥ 12 s | Start or stop a [battery maintenance cycle](manage-battery-charging.md#control-charging-manually). | `OUT` LEDs blink together (only with external power connected). |

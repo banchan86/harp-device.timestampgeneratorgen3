@@ -7,12 +7,6 @@ $PSNativeCommandUseErrorActionPreference = $true
 
 Push-Location $PSScriptRoot
 try {
-    # Harp schema processor
-    $deviceYml = "..\device.yml"
-
-    Write-Output "Generating schema tables for $deviceYml..."
-    dotnet run --project .\harp-schema-processor $deviceYml .\apidoc
-
     $libPaths = @()
     $libPaths += Get-ChildItem "..\artifacts\bin\*\release_net4*" -Directory | Select-Object -Expand FullName
     $libPaths += "..\artifacts\package\release"

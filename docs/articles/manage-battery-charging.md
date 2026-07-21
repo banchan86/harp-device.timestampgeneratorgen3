@@ -14,7 +14,7 @@ The complete workflow is shown below:
 > To verify that these commands are working correctly, you can [monitor the battery voltage](monitor-device-status.md).
 
 > [!WARNING]
-> Battery charging requires external power and the [BATTERY switch](connections.md#ports-and-controls) turned `ON`. When the device is running from its battery, or when no battery is detected, the firmware cancels any active charge or discharge command and resumes normal function.
+> Battery charging requires external power and the [`BATTERY` switch](connections.md#ports-and-controls) turned `ON`. When the device is running from its battery, or when no battery is detected, the firmware cancels any active charge or discharge command and resumes normal function.
 
 ### Set Charging Thresholds
 
