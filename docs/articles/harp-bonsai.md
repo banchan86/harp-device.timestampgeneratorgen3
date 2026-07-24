@@ -5,9 +5,9 @@ Bonsai is a visual reactive programming language for building interactive experi
 >[!TIP]
 > More information on Bonsai can be found in the official [documentation](https://bonsai-rx.org/docs/).
 
-### Hello World Example
+### First Steps
 
-This example connects to the device, enables the `Timer` counter event at 50 Hz, and displays the counter values as they arrive.
+We will use an introductory example to connect and test the device in Bonsai. This example enables the `Heartbeat` event which displays the device's current timestamp as it updates every second. We revisit this example in more detail in the "Bonsai Workflows" section.
 
 Before beginning:
 - Connect the [USB](connections.md) cable to the computer.
@@ -16,7 +16,7 @@ Before beginning:
 - Paste the workflow into Bonsai.
 
 :::workflow
-![Timestamp Generator Gen3 Hello World](../workflows/timestampgeneratorgen3-helloworld.bonsai)
+![Timestamp Generator Gen3 First Steps](../workflows/timestampgeneratorgen3-firststeps.bonsai)
 :::
 
 > [!TIP]
@@ -26,9 +26,16 @@ Before beginning:
 - Click on the [`TimestampGeneratorGen3 (DeviceDataWriter)`] operator and set the `Path` property for the name and location of the save file (e.g. `Data\TimestampGeneratorGen3.harp`).
 - Press the "Start" button in Bonsai to run the workflow.
 
-The [`VisualizerWindow`] operator will automatically open a visualizer when the workflow starts. Press <kbd>A</kbd> to enable the `Timer` counter event at 50 Hz. Once the counter is enabled, you should see the counter. If an error appears in Bonsai, check out the [troubleshooting](troubleshooting.md) section.
+A [visualizer](xref:Bonsai.Design.VisualizerWindow) will automatically open when the workflow starts, displaying the device timestamp every second:
 
-Otherwise, the device is ready to use! We suggest going through the "Bonsai Workflows" section if you are not familiar with using Harp devices in Bonsai.
+```text
+345
+346
+```
+
+The device is ready to use! If, instead, an error appears in Bonsai, check out the [troubleshooting](troubleshooting.md) section.
+
+Next, we suggest going through the "Bonsai Workflows" section if you are not familiar with using Harp devices in Bonsai.
 
 Alternatively, if you have experience with Harp devices, you can check the [register table](xref:Harp.TimestampGeneratorGen3) in the reference to access the device functionality directly.
 
@@ -37,4 +44,3 @@ Alternatively, if you have experience with Harp devices, you can check the [regi
 <!--Reference Style Links -->
 [`TimestampGeneratorGen3 (Device)`]: xref:Harp.TimestampGeneratorGen3.Device
 [`TimestampGeneratorGen3 (DeviceDataWriter)`]: xref:Harp.TimestampGeneratorGen3.DeviceDataWriter
-[`VisualizerWindow`]: xref:Bonsai.Design.VisualizerWindow

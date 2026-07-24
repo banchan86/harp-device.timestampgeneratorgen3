@@ -13,7 +13,7 @@ Data from the device is logged by the [`DeviceDataWriter`] operator in the Harp 
 While the workflow is running, registers are logged as the device produces messages (events and command echoes). Two properties of the [`Device`] operator are also important for logging:
 
 - `DumpRegisters` - Enabled by default, this property logs a read of every register when the device initializes, capturing the initial state of the device at the start of the experiment.
-- `Heartbeat` - Disabled by default, enable it to regularly log the device's hardware timestamp. On the Timestamp Generator Gen3, the [`Timer`](generate-timer-events.md) events can perform the same function.
+- `Heartbeat` - Disabled by default, enable it to regularly log the device's hardware timestamp. On the Timestamp Generator Gen3, the [`Timer`](generate-timer-events.md) events can perform the same function at a higher frequency.
 
 > [!WARNING]
 > The register dump can be used as an approximate start time for the workflow or experiment, but keep in mind that other devices in the workflow may initialize at a different time.
