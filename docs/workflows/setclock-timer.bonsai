@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WorkflowBuilder Version="2.9.0"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xmlns:wie="clr-namespace:Bonsai.Windows.Input;assembly=Bonsai.Windows.Input"
+                 xmlns:rx="clr-namespace:Bonsai.Reactive;assembly=Bonsai.Core"
                  xmlns:harp="clr-namespace:Bonsai.Harp;assembly=Bonsai.Harp"
                  xmlns="https://bonsai-rx.org/2018/workflow">
   <Workflow>
     <Nodes>
       <Expression xsi:type="Combinator">
-        <Combinator xsi:type="wie:KeyDown">
-          <wie:Filter>D</wie:Filter>
-          <wie:SuppressRepetitions>false</wie:SuppressRepetitions>
+        <Combinator xsi:type="rx:Timer">
+          <rx:DueTime>PT2S</rx:DueTime>
+          <rx:Period>PT0S</rx:Period>
         </Combinator>
       </Expression>
       <Expression xsi:type="harp:CreateMessage">

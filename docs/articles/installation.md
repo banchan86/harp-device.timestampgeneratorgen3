@@ -18,7 +18,7 @@ These steps are only required the first time you connect the device to a new com
 
 # [harp-python](#tab/harp-python)
 
-The [harp-python](https://pypi.org/project/harp-python/) library provides a low-level interface to [read and manipulate](logging-analysis.md) data from Harp devices. You can install it in a Python environment with:
+The [harp-python](https://pypi.org/project/harp-python/) library is a Python package for [loading and manipulating](logging-analysis.md) binary data collected from Harp devices. Install it in a Python environment with:
 
 ```cmd
 pip install harp-python
@@ -45,7 +45,7 @@ To update the firmware, use the device setup tool in Bonsai:
 6. Select the downloaded `.hex` file.
 7. Click "Update".
 
-After the update, the device will reboot with the new firmware and go through the [startup LED sequence](troubleshooting.md#indicator-lights).
+After the update, the device will reboot with the new firmware and go through the [startup LED sequence](connections.md#status-indicators).
 
 > [!WARNING]
 > Make sure the device is running on external (USB) power during the update, not on its battery.

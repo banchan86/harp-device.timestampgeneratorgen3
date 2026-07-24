@@ -1,6 +1,6 @@
 ## Monitor Device Status
 
-The device status can be checked physically, using the [`OPTION` button](connections.md#ports-and-controls) and [indicator lights](troubleshooting.md#indicator-lights) on the front panel. The battery charge and connected devices are also accessible from within Bonsai when you need to log them alongside your data or use the information in a workflow. 
+The device status can be checked physically, using the [`OPTION` button](connections.md#ports-and-controls) and [indicator lights](connections.md#status-indicators) on the front panel. The battery charge and connected devices are also accessible from within Bonsai when you need to log them alongside your data or use the information in a workflow. 
 
 This article covers how to check the battery charge, configure the battery telemetry rate, observe the battery events, and check the connected devices from Bonsai.
 

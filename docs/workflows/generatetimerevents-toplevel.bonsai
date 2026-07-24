@@ -100,7 +100,7 @@
         <Name>TimestampGeneratorGen3 Commands</Name>
       </Expression>
       <Expression xsi:type="Annotation">
-        <Name>Set Clock Value</Name>
+        <Name>Timestamp Software Events</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="Combinator">
@@ -109,14 +109,26 @@
           <wie:SuppressRepetitions>false</wie:SuppressRepetitions>
         </Combinator>
       </Expression>
-      <Expression xsi:type="harp:CreateMessage">
-        <harp:MessageType>Write</harp:MessageType>
-        <harp:Payload xsi:type="harp:CreateTimestampSecondsPayload">
-          <harp:TimestampSeconds>0</harp:TimestampSeconds>
-        </harp:Payload>
+      <Expression xsi:type="SubscribeSubject">
+        <Name>TimestampGeneratorGen3 Events</Name>
       </Expression>
-      <Expression xsi:type="MulticastSubject">
-        <Name>TimestampGeneratorGen3 Commands</Name>
+      <Expression xsi:type="p1:Parse">
+        <harp:Register xsi:type="p1:TimestampedTimer" />
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="rx:WithLatestFrom" />
+      </Expression>
+      <Expression xsi:type="ui:VisualizerWindow">
+        <ui:Visible>true</ui:Visible>
+        <ui:Location>
+          <ui:X>700</ui:X>
+          <ui:Y>100</ui:Y>
+        </ui:Location>
+        <ui:Size>
+          <ui:Width>300</ui:Width>
+          <ui:Height>300</ui:Height>
+        </ui:Size>
+        <ui:WindowState xsi:nil="true" />
       </Expression>
     </Nodes>
     <Edges>
@@ -129,8 +141,10 @@
       <Edge From="11" To="12" Label="Source1" />
       <Edge From="14" To="15" Label="Source1" />
       <Edge From="15" To="16" Label="Source1" />
-      <Edge From="18" To="19" Label="Source1" />
+      <Edge From="18" To="21" Label="Source1" />
       <Edge From="19" To="20" Label="Source1" />
+      <Edge From="20" To="21" Label="Source2" />
+      <Edge From="21" To="22" Label="Source1" />
     </Edges>
   </Workflow>
 </WorkflowBuilder>

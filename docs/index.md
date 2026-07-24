@@ -4,13 +4,13 @@ The Harp [Timestamp Generator Gen3](articles/timestampgeneratorgen3-overview.md)
 
 ![Harp Timestamp Generator Gen3 generator mode](./images/generator-mode.svg){width=600}
 
-In a typical behavioral rig, each Harp device timestamps its own data using an onboard clock. The Timestamp Generator Gen3 generates and distributes a shared hardware clock to every connected device, so that data streams acquired across the whole rig land on a common timeline without any post-hoc alignment.
+Behavioral rigs often include multiple Harp devices that acquire data simultaneously. Since each Harp device timestamps data using an onboard clock, their individual clocks must be synchronized. The Timestamp Generator Gen3 uses its onboard clock to generate and distribute the current Harp timestamp to every connected Harp device, allowing them to continuously synchronize their onboard clocks. As a result, data streams acquired across the entire rig are timestamped on a common timeline in real time and do not require any post-hoc alignment.
 
 The Timestamp Generator Gen3 provides:
 
-- Distribution of the Harp synchronization clock to up to 6 Harp devices.
-- Operation as either a clock generator or a repeater, allowing several units to be daisy-chained in larger setups.
-- An internal battery that keeps the clock running when external power is lost or removed.
+- Synchronize up to six Harp devices from a single Timestamp Generator Gen3, or expand to larger systems by daisy-chaining additional Timestamp Generator Gen3 devices as repeaters.
+- Harp devices connected to the same Timestamp Generator Gen3 remain synchronized even when they are connected to different acquisition computers, enabling distributed experimental setups while maintaining a common timeline.
+- An internal battery keeps the clock running when external power is lost, allowing acquisition to resume with the correct Harp timestamp once power is restored, so data acquired before and after the interruption remain on the same timeline. This is particularly useful for long-term experiments spanning multiple days.
 - [Bonsai](https://bonsai-rx.org/) integration for flexible experiment acquisition and control.
 
 > [!NOTE]

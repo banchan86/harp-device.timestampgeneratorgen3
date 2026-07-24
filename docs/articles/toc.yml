@@ -11,6 +11,8 @@
 - name: Bonsai
   href: harp-bonsai.md
 - name: Bonsai Workflows
+- name: Set Clock
+  href: set-clock.md
 - name: Generate Timer Events
   href: generate-timer-events.md
 - name: Monitor Device Status
@@ -21,5 +23,5 @@
 - name: Logging and Analysis
   href: logging-analysis.md
 - name: Troubleshooting
-- name: Indicators and Errors
+- name: Errors
   href: troubleshooting.md

@@ -22,7 +22,7 @@
           <harp:OperationLed>On</harp:OperationLed>
           <harp:DumpRegisters>true</harp:DumpRegisters>
           <harp:VisualIndicators>On</harp:VisualIndicators>
-          <harp:Heartbeat>Disabled</harp:Heartbeat>
+          <harp:Heartbeat>Enabled</harp:Heartbeat>
           <harp:IgnoreErrors>false</harp:IgnoreErrors>
           <harp:PortName>COM8</harp:PortName>
         </Combinator>
@@ -40,35 +40,17 @@
         <Name>TimestampGeneratorGen3 Events</Name>
       </Expression>
       <Expression xsi:type="Annotation">
-        <Name>Enable Timer Events</Name>
-        <Text><![CDATA[]]></Text>
-      </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="wie:KeyDown">
-          <wie:Filter>A</wie:Filter>
-          <wie:SuppressRepetitions>false</wie:SuppressRepetitions>
-        </Combinator>
-      </Expression>
-      <Expression xsi:type="p1:CreateMessage">
-        <harp:MessageType>Write</harp:MessageType>
-        <harp:Payload xsi:type="p1:CreateTimerFrequencyPayload">
-          <p1:TimerFrequency>Timer50Hz</p1:TimerFrequency>
-        </harp:Payload>
-      </Expression>
-      <Expression xsi:type="MulticastSubject">
-        <Name>TimestampGeneratorGen3 Commands</Name>
-      </Expression>
-      <Expression xsi:type="Annotation">
-        <Name>Read Timer Events</Name>
+        <Name>Visualize Heartbeat Event</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="SubscribeSubject">
         <Name>TimestampGeneratorGen3 Events</Name>
       </Expression>
-      <Expression xsi:type="p1:Parse">
-        <harp:Register xsi:type="p1:TimestampedTimer" />
+      <Expression xsi:type="harp:Parse">
+        <harp:Register xsi:type="harp:TimestampSeconds" />
       </Expression>
       <Expression xsi:type="ui:VisualizerWindow">
+        <ui:VisualizerType xsi:type="TypeMapping" TypeArguments="ui:ObjectTextVisualizer" />
         <ui:Visible>true</ui:Visible>
         <ui:Location>
           <ui:X>400</ui:X>
@@ -80,6 +62,44 @@
         </ui:Size>
         <ui:WindowState xsi:nil="true" />
       </Expression>
+      <Expression xsi:type="Annotation">
+        <Name>Set Clock with KeyDown</Name>
+        <Text><![CDATA[]]></Text>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="wie:KeyDown">
+          <wie:Filter>A</wie:Filter>
+          <wie:SuppressRepetitions>false</wie:SuppressRepetitions>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="harp:CreateMessage">
+        <harp:MessageType>Write</harp:MessageType>
+        <harp:Payload xsi:type="harp:CreateTimestampSecondsPayload">
+          <harp:TimestampSeconds>0</harp:TimestampSeconds>
+        </harp:Payload>
+      </Expression>
+      <Expression xsi:type="MulticastSubject">
+        <Name>TimestampGeneratorGen3 Commands</Name>
+      </Expression>
+      <Expression xsi:type="Annotation">
+        <Name>Alternative: Set Clock with Timer</Name>
+        <Text><![CDATA[]]></Text>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="rx:Timer">
+          <rx:DueTime>PT2S</rx:DueTime>
+          <rx:Period>PT0S</rx:Period>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="harp:CreateMessage">
+        <harp:MessageType>Write</harp:MessageType>
+        <harp:Payload xsi:type="harp:CreateTimestampSecondsPayload">
+          <harp:TimestampSeconds>0</harp:TimestampSeconds>
+        </harp:Payload>
+      </Expression>
+      <Expression xsi:type="MulticastSubject">
+        <Name>TimestampGeneratorGen3 Commands</Name>
+      </Expression>
     </Nodes>
     <Edges>
       <Edge From="1" To="2" Label="Source1" />
@@ -89,6 +109,8 @@
       <Edge From="7" To="8" Label="Source1" />
       <Edge From="10" To="11" Label="Source1" />
       <Edge From="11" To="12" Label="Source1" />
+      <Edge From="14" To="15" Label="Source1" />
+      <Edge From="15" To="16" Label="Source1" />
     </Edges>
   </Workflow>
 </WorkflowBuilder>

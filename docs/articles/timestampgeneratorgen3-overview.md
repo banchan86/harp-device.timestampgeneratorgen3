@@ -1,7 +1,5 @@
 ## Timestamp Generator Gen3
 
-The Timestamp Generator Gen3 is a Harp clock synchronization device.
-
 ![Harp Timestamp Generator Gen3](../images/OEPS-TimestampGen.png){width=450}
 
 ### Key Features
@@ -16,6 +14,8 @@ The Timestamp Generator Gen3 is a Harp clock synchronization device.
 
 - Clock inputs: 1
 - Clock outputs: 6
+- Timestamp resolution: 32 µs
+- Synchronization accuracy: 22 +/- 16 µs
 - Synchronization frequency: 1 Hz
 - Battery capacity: 2 Ah (lithium polymer)
 - Battery runtime: up to 24h

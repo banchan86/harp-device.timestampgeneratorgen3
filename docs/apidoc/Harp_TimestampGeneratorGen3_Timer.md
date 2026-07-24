@@ -13,3 +13,9 @@ uid: Harp.TimestampGeneratorGen3.Timer
 :::workflow
 ![Observe Timer Events](../workflows/generatetimerevents-events.bonsai)
 :::
+
+### Timestamp Software Events
+
+:::workflow
+![Timestamp Software Events](../workflows/generatetimerevents-softwareevents.bonsai)
+:::
