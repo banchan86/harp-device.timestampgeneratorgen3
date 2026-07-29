@@ -28,7 +28,7 @@ pip install harp-python
 
 ## Firmware
 
-New features are added and bugs are fixed with firmware updates which are published on the [release page](https://github.com/harp-tech/device.timestampgeneratorgen3/releases) in the Timestamp Generator Gen3 repository. Each firmware release is tagged with a `fw` version prefix (e.g. `fw1.3-harp1.15`), and the `.hex` files can be found in the "Assets" section. Download the file that matches the hardware (`hw`) version of your device.
+New features are added and bugs are fixed with firmware updates which are published on the [release page](https://github.com/harp-tech/device.timestampgeneratorgen3/releases) in the Timestamp Generator Gen3 repository. Each firmware release is tagged with a `fw` version prefix (e.g. `fw1.3-harp1.15`), and the `.hex` files can be found in the "Assets" section. Download the file that matches the [hardware (`hw`) version](timestampgeneratorgen3-overview.md#hardware) of your device.
 
 >[!TIP] 
 > The hardware version is printed on the front panel of the device.
@@ -45,7 +45,7 @@ To update the firmware, use the device setup tool in Bonsai:
 6. Select the downloaded `.hex` file.
 7. Click "Update".
 
-After the update, the device will reboot with the new firmware and go through the [startup LED sequence](connections.md#status-indicators).
+After the update, the device will reboot with the new firmware and go through the [startup LED sequence](connections.md#front-panel).
 
 > [!WARNING]
 > Make sure the device is running on external (USB) power during the update, not on its battery.

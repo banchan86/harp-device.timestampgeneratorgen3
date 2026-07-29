@@ -22,7 +22,20 @@
 - Battery default charging thresholds: 3.65 V to 3.75 V ([configurable](manage-battery-charging.md))
 - Battery charging safety limits: 3.35 V to 4.1 V
 
-> [!NOTE]
-> There was no existing hardware or firmware version table, but I think it is worth adding one and also a note on the previous generations (what happened to gen1 and gen2).
+### Hardware
+
+| Version | Notes |
+| ------- | ----- |
+| 1.3 | <ul><li> USB Mini-B connector changed to USB-C </li></ul> |
+| 1.2 | <ul><li> Production release </li></ul> |
+
+### Firmware
+
+| Version | Notes |
+| ------- | ----- |
+| 1.3 |  <ul><li> Raise harp core to 1.15 </li></ul> |
+| 1.2 | <ul><li> Added unitary periodic counter </li><li> Implement and expose connected devices register in device.yml </li></ul> |
+| 1.1 | <ul><li> Add prototype device schema and interface </li><li> Fixed the charge/discharge stop command </li><li> Update interface to use new generators </li><li> Raise harp core to 1.13 </li></ul> |
+| 1.0 | <ul><li> Production release </li></ul> |
 
 [!INCLUDE [](version-footer.md)]

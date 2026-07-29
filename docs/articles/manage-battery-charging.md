@@ -14,7 +14,7 @@ The complete workflow is shown below:
 > To verify that these commands are working correctly, you can [monitor the battery voltage](monitor-device-status.md).
 
 > [!WARNING]
-> Battery charging requires external power and the [`BATTERY` switch](connections.md#ports-and-controls) turned `ON`. When the device is running from its battery, or when no battery is detected, the firmware cancels any active charge or discharge command and resumes normal function.
+> Battery charging requires external power and the [BATTERY](connections.md#front-panel) switch turned on. When the device is running from its battery, or when no battery is detected, the firmware cancels any active charge or discharge command and resumes normal function.
 
 ### Set Charging Thresholds
 
@@ -91,7 +91,7 @@ In a separate branch:
 Run the workflow and press <kbd>F</kbd> to start the cycle. Press <kbd>G</kbd> to cancel the cycle at any time and resume automatic control. The `Stop` command can also be used to stop the manual charge/discharge commands in the previous section.
 
 > [!TIP]
-> A battery cycle can also be started from the device itself by holding the `OPTION` [button](connections.md#ports-and-controls).
+> A battery cycle can also be started from the device itself by holding the [OPTION](connections.md#front-panel) button.
 
 [!INCLUDE [](version-footer.md)]
 

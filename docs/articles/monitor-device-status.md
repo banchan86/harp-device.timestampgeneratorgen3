@@ -1,6 +1,6 @@
 ## Monitor Device Status
 
-The device status can be checked physically, using the [`OPTION` button](connections.md#ports-and-controls) and [indicator lights](connections.md#status-indicators) on the front panel. The battery charge and connected devices are also accessible from within Bonsai when you need to log them alongside your data or use the information in a workflow. 
+The device status can be checked physically, using the [OPTION](connections.md#front-panel) button and status indicators on the front panel. The battery charge and connected devices are also accessible from within Bonsai when you need to log them alongside your data or use the information in a workflow. 
 
 This article covers how to check the battery charge, configure the battery telemetry rate, observe the battery events, and check the connected devices from Bonsai.
 
@@ -54,7 +54,7 @@ To read the battery charge or battery rate events, subscribe to the device event
 Run the workflow and press <kbd>A</kbd> to request the current battery voltage on demand, or press <kbd>S</kbd> to set the battery rate and receive a new value at regular intervals. The battery voltage will appear in the visualizer window.
 
 > [!NOTE]
-> If the [`BATTERY` switch](connections.md#ports-and-controls) is off or the battery isn't detected, a battery read will return zero and no events will be sent.
+> If the [BATTERY](connections.md#front-panel) switch is off or the battery isn't detected, a battery read will return zero and no events will be sent.
 
 ### Check Connected Devices
 
@@ -77,7 +77,7 @@ In a separate branch:
 - Insert a [`Parse`] operator and set the `Register` property to `TimestampedDevicesConnected`.
 - Insert a [`VisualizerWindow`] operator to display the reply.
 
-Run the workflow and press <kbd>D</kbd>. The visualizer window will show the set of ports with a device connected (e.g. `Out0, Out2`), matching the `OUT` LEDs lit on the front panel.
+Run the workflow and press <kbd>D</kbd>. The visualizer window will show the set of ports with a device connected (e.g. `Out0, Out2`), matching the **OUT** LEDs lit on the front panel.
 
 [!INCLUDE [](version-footer.md)]
 

@@ -14,7 +14,7 @@ The complete workflow is shown below:
 > You can copy the workflow from the workflow cell or find and add these operators from the Bonsai [Toolbox](https://bonsai-rx.org/docs/articles/editor.html?tabs=mouse-controls#toolbox). Reading and setting the device clock is a core functionality shared by all Harp devices. Thus, operators marked with a `(Harp)` suffix come from the `Bonsai.Harp` base library (installed automatically as a dependency) instead of the device-specific package.
 
 > [!WARNING]
-> The internal clock will also reset if the device is powered off (if it is disconnected from USB while the [`BATTERY` switch](connections.md#ports-and-controls) is OFF or if the battery is depleted).
+> The internal clock will also reset if the device is powered off (if it is disconnected from USB while the [BATTERY](connections.md#front-panel) switch is off or if the battery is depleted).
 
 ### Visualize Heartbeat Event
 
@@ -48,7 +48,7 @@ Run the workflow, and the visualizer will start streaming the timestamp every se
 Writing to the [`TimestampSeconds`] register sets the device's clock, in whole seconds.
 
 > [!WARNING]
-> Make sure the device clock is [unlocked](connections.md#ports-and-controls) before setting the clock. If the clock is locked, the device will throw an error:
+> Make sure the device clock is [unlocked](connections.md#front-panel) before setting the clock. If the clock is locked, the device will throw an error:
 >```text
 >Runtime error
 >

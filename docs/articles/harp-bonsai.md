@@ -7,7 +7,7 @@ Bonsai is a visual reactive programming language for building interactive experi
 
 ### First Steps
 
-We will use an introductory example to connect and test the device in Bonsai. This example enables the `Heartbeat` event which displays the device's current timestamp as it updates every second. We revisit this example in more detail in the "Bonsai Workflows" section.
+We will use an introductory example to connect and test the device in Bonsai. This example enables the [heartbeat](./set-clock.md) event and displays the device's current timestamp as it updates every second. We revisit this example in more detail in the "Bonsai Workflows" section.
 
 Before beginning:
 - Connect the [USB](connections.md) cable to the computer.
