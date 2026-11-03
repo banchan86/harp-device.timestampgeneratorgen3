@@ -47,9 +47,9 @@ This article covers the ports, controls, and status indicators on the Timestamp 
 
 **USB (Mini-B/USB-C)** - This port connects the device to the computer for communication and also provides the external power used to run the device and charge its internal battery. The connector type depends on the [hardware version](timestampgeneratorgen3-overview.md#hardware) of the device.
 
-**CLKIN (Stereo Jack)** - When the device is configured as a [repeater](#repeater-mode), it receives the Harp clock from an upstream Timestamp Generator Gen3 on this port instead of generating its own.
+**CLK IN (Stereo Jack)** - When the device is configured as a [repeater](#repeater-mode), it receives the Harp clock from an upstream Timestamp Generator Gen3 on this port instead of generating its own.
 
-**CLKOUT (Stereo Jack)** - These ports distribute the Harp synchronization clock to up to 6 Harp devices. Connect each port to the clock input (**CLKIN**) port of a Harp device. The device automatically detects which ports have a device connected, reported by the corresponding **OUT** LED on the front panel.
+**CLK OUT (Stereo Jack)** - These ports distribute the Harp synchronization clock to up to 6 Harp devices. Connect each port to the clock input (**CLK IN**) port of a Harp device. The device automatically detects which ports have a device connected, reported by the corresponding **OUT** LED on the front panel.
 
 ### Connections
 
