@@ -20,7 +20,8 @@
 - Battery capacity: 2 Ah (lithium polymer)
 - Battery runtime: up to 24h
 - Battery default charging thresholds: 3.65 V to 3.75 V ([configurable](manage-battery-charging.md))
-- Battery charging safety limits: 3.35 V to 4.1 V
+- Battery charging safety limits: 3.35 V to 4.1 V. Charging will kick in or stop automatically if the battery level reaches those limits, regardless of the manually defined limits.
+- Battery depleted limit: 3.25 V. The device will shut down automatically or refuse to start up without external power.
 
 ### Hardware
 

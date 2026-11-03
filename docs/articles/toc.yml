@@ -1,7 +1,7 @@
 - name: Introduction
 - name: Overview
   href: ../index.md
-- name: Timestamp Generator Gen3
+- name: Specs
   href: timestampgeneratorgen3-overview.md
 - name: Getting Started
 - name: Controls and Connections
