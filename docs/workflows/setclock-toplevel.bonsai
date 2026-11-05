@@ -10,7 +10,7 @@
   <Workflow>
     <Nodes>
       <Expression xsi:type="Annotation">
-        <Name>Harp Device Pattern</Name>
+        <Name>Harp device pattern</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="rx:BehaviorSubject" TypeArguments="harp:HarpMessage">
@@ -40,7 +40,7 @@
         <Name>TimestampGeneratorGen3 Events</Name>
       </Expression>
       <Expression xsi:type="Annotation">
-        <Name>Visualize Heartbeat Event</Name>
+        <Name>Visualize heartbeat events</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="SubscribeSubject">
@@ -63,32 +63,13 @@
         <ui:WindowState xsi:nil="true" />
       </Expression>
       <Expression xsi:type="Annotation">
-        <Name>Set Clock with KeyDown</Name>
+        <Name>Set clock with KeyDown</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="wie:KeyDown">
           <wie:Filter>A</wie:Filter>
           <wie:SuppressRepetitions>false</wie:SuppressRepetitions>
-        </Combinator>
-      </Expression>
-      <Expression xsi:type="harp:CreateMessage">
-        <harp:MessageType>Write</harp:MessageType>
-        <harp:Payload xsi:type="harp:CreateTimestampSecondsPayload">
-          <harp:TimestampSeconds>0</harp:TimestampSeconds>
-        </harp:Payload>
-      </Expression>
-      <Expression xsi:type="MulticastSubject">
-        <Name>TimestampGeneratorGen3 Commands</Name>
-      </Expression>
-      <Expression xsi:type="Annotation">
-        <Name>Alternative: Set Clock with Timer</Name>
-        <Text><![CDATA[]]></Text>
-      </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="rx:Timer">
-          <rx:DueTime>PT2S</rx:DueTime>
-          <rx:Period>PT0S</rx:Period>
         </Combinator>
       </Expression>
       <Expression xsi:type="harp:CreateMessage">
@@ -109,8 +90,6 @@
       <Edge From="7" To="8" Label="Source1" />
       <Edge From="10" To="11" Label="Source1" />
       <Edge From="11" To="12" Label="Source1" />
-      <Edge From="14" To="15" Label="Source1" />
-      <Edge From="15" To="16" Label="Source1" />
     </Edges>
   </Workflow>
 </WorkflowBuilder>

@@ -10,7 +10,7 @@
   <Workflow>
     <Nodes>
       <Expression xsi:type="Annotation">
-        <Name>Harp Device Pattern</Name>
+        <Name>Harp device pattern</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="rx:BehaviorSubject" TypeArguments="harp:HarpMessage">
@@ -40,7 +40,7 @@
         <Name>TimestampGeneratorGen3 Events</Name>
       </Expression>
       <Expression xsi:type="Annotation">
-        <Name>Enable Timer Events</Name>
+        <Name>Enable timer events</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="Combinator">
@@ -59,7 +59,7 @@
         <Name>TimestampGeneratorGen3 Commands</Name>
       </Expression>
       <Expression xsi:type="Annotation">
-        <Name>Observe Timer Events</Name>
+        <Name>Visualize timer events</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="SubscribeSubject">
@@ -81,7 +81,7 @@
         <ui:WindowState xsi:nil="true" />
       </Expression>
       <Expression xsi:type="Annotation">
-        <Name>Set Counter Value</Name>
+        <Name>Set counter value</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="Combinator">
@@ -100,7 +100,7 @@
         <Name>TimestampGeneratorGen3 Commands</Name>
       </Expression>
       <Expression xsi:type="Annotation">
-        <Name>Timestamp Software Events</Name>
+        <Name>Timestamp software events</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="Combinator">

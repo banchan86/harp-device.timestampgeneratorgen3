@@ -2,8 +2,8 @@
 uid: Harp.TimestampGeneratorGen3.CreateTimerFrequencyPayload
 ---
 
-### Enable Timer Events
+### Enable timer events
 
 :::workflow
-![Enable Timer Events](../workflows/generatetimerevents-frequency.bonsai)
+![Enable timer events](../workflows/generatetimerevents-frequency.bonsai)
 :::

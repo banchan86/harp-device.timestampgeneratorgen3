@@ -2,8 +2,8 @@
 uid: Harp.TimestampGeneratorGen3.CreateTimerPayload
 ---
 
-### Set Counter Value
+### Set counter value
 
 :::workflow
-![Set Counter Value](../workflows/generatetimerevents-counter.bonsai)
+![Set counter value](../workflows/generatetimerevents-counter.bonsai)
 :::

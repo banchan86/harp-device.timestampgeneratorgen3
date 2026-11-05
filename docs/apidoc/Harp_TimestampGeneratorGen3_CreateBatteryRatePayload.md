@@ -2,8 +2,8 @@
 uid: Harp.TimestampGeneratorGen3.CreateBatteryRatePayload
 ---
 
-### Configure the Battery Rate
+### Configure the battery rate
 
 :::workflow
-![Configure the Battery Rate](../workflows/monitordevicestatus-batteryrate.bonsai)
+![Configure the battery rate](../workflows/monitordevicestatus-batteryrate.bonsai)
 :::
