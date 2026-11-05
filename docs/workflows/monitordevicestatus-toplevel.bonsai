@@ -10,7 +10,7 @@
   <Workflow>
     <Nodes>
       <Expression xsi:type="Annotation">
-        <Name>Harp Device Pattern</Name>
+        <Name>Harp device pattern</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="rx:BehaviorSubject" TypeArguments="harp:HarpMessage">
@@ -40,7 +40,7 @@
         <Name>TimestampGeneratorGen3 Events</Name>
       </Expression>
       <Expression xsi:type="Annotation">
-        <Name>Check Battery Charge</Name>
+        <Name>Check battery charge</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="Combinator">
@@ -59,7 +59,7 @@
         <Name>TimestampGeneratorGen3 Commands</Name>
       </Expression>
       <Expression xsi:type="Annotation">
-        <Name>Configure the Battery Rate</Name>
+        <Name>Configure the battery rate</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="Combinator">
@@ -78,7 +78,7 @@
         <Name>TimestampGeneratorGen3 Commands</Name>
       </Expression>
       <Expression xsi:type="Annotation">
-        <Name>Observe Battery Events</Name>
+        <Name>Visualize battery events</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="SubscribeSubject">
@@ -100,7 +100,7 @@
         <ui:WindowState xsi:nil="true" />
       </Expression>
       <Expression xsi:type="Annotation">
-        <Name>Check Connected Devices</Name>
+        <Name>Check connected devices</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="Combinator">

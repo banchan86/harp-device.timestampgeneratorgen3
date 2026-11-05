@@ -2,8 +2,8 @@
 uid: Harp.TimestampGeneratorGen3.DevicesConnected
 ---
 
-### Check Connected Devices
+### Check connected devices
 
 :::workflow
-![Check Connected Devices](../workflows/monitordevicestatus-devicesconnected.bonsai)
+![Check connected devices](../workflows/monitordevicestatus-devicesconnected.bonsai)
 :::

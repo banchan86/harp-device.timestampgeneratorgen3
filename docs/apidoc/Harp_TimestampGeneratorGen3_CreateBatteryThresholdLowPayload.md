@@ -2,8 +2,8 @@
 uid: Harp.TimestampGeneratorGen3.CreateBatteryThresholdLowPayload
 ---
 
-### Set Charging Thresholds
+### Set charging thresholds
 
 :::workflow
-![Set Charging Thresholds](../workflows/managebatterycharging-thresholds.bonsai)
+![Set charging thresholds](../workflows/managebatterycharging-thresholds.bonsai)
 :::

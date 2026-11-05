@@ -5,15 +5,15 @@ uid: Harp.TimestampGeneratorGen3.Device
 Use the [Harp device pattern](https://harp-tech.org/articles/operators.html#device-pattern) to initialize the device, log data, and send commands to and receive messages from the Timestamp Generator Gen3.
 
 :::workflow
-![Harp Device Pattern](../workflows/harp-devicepattern.bonsai)
+![Harp device pattern](../workflows/harp-devicepattern.bonsai)
 :::
 
 Check out the following in-depth guides to learn how to access the device functionality with the `Harp.TimestampGeneratorGen3` package:
 
-- [Set Clock](../articles/set-clock.md)
-- [Generate Timer Events](../articles/generate-timer-events.md)
-- [Monitor Device Status](../articles/monitor-device-status.md)
-- [Manage Battery Charging](../articles/manage-battery-charging.md)
+- [Set clock](../articles/set-clock.md)
+- [Generate timer events](../articles/generate-timer-events.md)
+- [Monitor device status](../articles/monitor-device-status.md)
+- [Manage battery charging](../articles/manage-battery-charging.md)
 
 Refer to the register table below for a complete listing of the available registers on the device.
 

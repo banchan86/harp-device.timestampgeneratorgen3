@@ -2,20 +2,20 @@
 uid: Harp.TimestampGeneratorGen3.Timer
 ---
 
-### Set Counter Value
+### Set counter value
 
 :::workflow
-![Set Counter Value](../workflows/generatetimerevents-counter.bonsai)
+![Set counter value](../workflows/generatetimerevents-counter.bonsai)
 :::
 
-### Observe Timer Events
+### Visualize timer events
 
 :::workflow
-![Observe Timer Events](../workflows/generatetimerevents-events.bonsai)
+![Visualize timer events](../workflows/generatetimerevents-events.bonsai)
 :::
 
-### Timestamp Software Events
+### Timestamp software events
 
 :::workflow
-![Timestamp Software Events](../workflows/generatetimerevents-softwareevents.bonsai)
+![Timestamp software events](../workflows/generatetimerevents-softwareevents.bonsai)
 :::

@@ -2,14 +2,14 @@
 uid: Harp.TimestampGeneratorGen3.Battery
 ---
 
-### Check Battery Charge
+### Check battery charge
 
 :::workflow
-![Check Battery Charge](../workflows/monitordevicestatus-checkbattery.bonsai)
+![Check battery charge](../workflows/monitordevicestatus-checkbattery.bonsai)
 :::
 
-### Observe Battery Events
+### Visualize battery events
 
 :::workflow
-![Observe Battery Events](../workflows/monitordevicestatus-battery.bonsai)
+![Visualize battery events](../workflows/monitordevicestatus-battery.bonsai)
 :::

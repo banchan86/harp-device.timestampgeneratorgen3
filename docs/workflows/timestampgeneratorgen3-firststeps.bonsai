@@ -9,7 +9,7 @@
   <Workflow>
     <Nodes>
       <Expression xsi:type="Annotation">
-        <Name>Harp Device Pattern</Name>
+        <Name>Harp device pattern</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="rx:BehaviorSubject" TypeArguments="harp:HarpMessage">
@@ -39,7 +39,7 @@
         <Name>TimestampGeneratorGen3 Events</Name>
       </Expression>
       <Expression xsi:type="Annotation">
-        <Name>Visualize Heartbeat Event</Name>
+        <Name>Visualize heartbeat events</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="SubscribeSubject">

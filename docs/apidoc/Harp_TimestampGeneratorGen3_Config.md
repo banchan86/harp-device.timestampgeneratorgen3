@@ -2,14 +2,14 @@
 uid: Harp.TimestampGeneratorGen3.Config
 ---
 
-### Control Charging Manually
+### Control charging manually
 
 :::workflow
-![Control Charging Manually](../workflows/managebatterycharging-config.bonsai)
+![Control charging manually](../workflows/managebatterycharging-config.bonsai)
 :::
 
-### Run Battery Cycle
+### Run battery cycle
 
 :::workflow
-![Run Battery Cycle](../workflows/managebatterycharging-cycle.bonsai)
+![Run battery cycle](../workflows/managebatterycharging-cycle.bonsai)
 :::
