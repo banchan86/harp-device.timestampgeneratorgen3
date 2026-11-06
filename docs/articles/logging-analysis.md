@@ -13,7 +13,7 @@ Data from the device is logged by the [`DeviceDataWriter`] operator in the Harp 
 While the workflow is running, data is logged as the device executes commands and reports events. Two properties of the [`Device`] operator are also important for logging:
 
 - `DumpRegisters` - Enabled by default, the register dump records the value of every register when the device initializes, along with the Harp timestamp for when the value was read. This is useful for capturing the initial state of the device at the start of the experiment.
-- `Heartbeat` - Disabled by default, set this property to `Enabled` to regularly log the device's Harp timestamp. On the Timestamp Generator Gen3, the [`Timer`](generate-timer-events.md) events can perform the same function at a higher frequency while they are enabled.
+- `Heartbeat` - Disabled by default, set this property to `Enabled` to regularly log the device's Harp timestamp. On the Timestamp Generator Gen3, the [`Timer`](generate-counter-events.md) events can perform the same function at a higher frequency while they are enabled.
 
 > [!WARNING]
 > The Harp timestamps from the register dump can be used as an approximate start time for the workflow or experiment, but keep in mind that other devices in the workflow may initialize at a different time.
@@ -22,7 +22,7 @@ While the workflow is running, data is logged as the device executes commands an
 
 The [`harp-data`](https://harp-tech.org/python/) package imports data stored in the Harp binary format as [pandas](https://pandas.pydata.org/) DataFrames, which can then be analyzed with any `pandas` compatible plotting or analysis library.
 
-The following example demonstrates how to read and plot data from the [`Timer`](generate-timer-events.md) register.
+The following example demonstrates how to read and plot data from the [`Timer`](generate-counter-events.md) register.
 
 > [!NOTE]
 > This example requires a Python environment with [harp-data](installation.md?tabs=python#software-packages) and [`matplotlib`](https://matplotlib.org/) (used by `pandas` as a plotting backend) installed.

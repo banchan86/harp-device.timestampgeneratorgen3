@@ -28,7 +28,7 @@
 | Version | Notes |
 | ------- | ----- |
 | 1.3 | <ul><li> Changed the USB Mini-B connector to USB-C </li></ul> |
-| 1.2 | <ul><li> Production release </li></ul> |
+| 1.2 | <ul><li> Initial version </li></ul> |
 
 ## Firmware
 
@@ -37,6 +37,6 @@
 | 1.3 | <ul><li> Raised the Harp core to 1.15 </li></ul> |
 | 1.2 | <ul><li> Added a unitary periodic counter </li><li> Implemented and exposed the connected devices register in `device.yml` </li></ul> |
 | 1.1 | <ul><li> Added a prototype device schema and interface </li><li> Fixed the charge/discharge stop command </li><li> Updated the interface to use the new generators </li><li> Raised the Harp core to 1.13 </li></ul> |
-| 1.0 | <ul><li> Production release </li></ul> |
+| 1.0 | <ul><li> Initial version </li></ul> |
 
 [!INCLUDE [](../includes/version-footer.md)]
