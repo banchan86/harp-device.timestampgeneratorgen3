@@ -7,7 +7,7 @@
 		(at -1.8 0.3 90)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "4b556836-b4b6-4681-aff4-a9734f216c2c")
+		(uuid "a4ae6366-feb0-4818-a441-b3abbf360c2c")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -17,11 +17,11 @@
 			(justify left bottom)
 		)
 	)
-	(property "Value" ""
+	(property "Value" "Val**"
 		(at -2.36 2.98 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "132012d3-6e53-4d8e-9448-65534d46da51")
+		(uuid "ef117bd5-c4cc-4369-9d5d-95e14e4ec3c1")
 		(effects
 			(font
 				(size 1.176528 1.176528)
@@ -34,7 +34,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "1b0607ee-41e0-403b-a4a2-411a47dfc70d")
+		(uuid "4341fa4c-9621-48b8-91af-8004159495d1")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -45,7 +45,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "3186ce9a-80af-413a-9079-54aa7cbafc05")
+		(uuid "d218b630-6176-44e3-a357-3420a621f826")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -62,7 +62,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "723fff8a-de28-47c7-b53e-d7efeee42c6e")
+		(uuid "03ed40cf-6cb5-443a-88b1-d2d126173cd4")
 	)
 	(fp_line
 		(start -0.1 1.25)
@@ -72,7 +72,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "5a9310d9-a40e-4781-b75b-19922b2b5fc2")
+		(uuid "a987e832-9626-48f6-93fd-3fa0eab90ef1")
 	)
 	(fp_circle
 		(center -2.2 0.8)
@@ -83,7 +83,7 @@
 		)
 		(fill yes)
 		(layer "F.SilkS")
-		(uuid "0685cc1c-d409-444c-bf15-62edd961912d")
+		(uuid "209689fb-7ec8-4607-abc9-a7f482c30d3d")
 	)
 	(fp_line
 		(start -1.6 -1.25)
@@ -93,7 +93,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "14263d67-f9ab-401a-b8ad-e53dbf2fb61e")
+		(uuid "7215bf7c-c41a-42ed-8a6f-2e33d483b783")
 	)
 	(fp_line
 		(start -1.6 1.25)
@@ -103,7 +103,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "7db78f74-1bf5-4ebd-be58-d1a481af4d63")
+		(uuid "e33a6cd1-601f-400d-a2bf-3d810b6bf00d")
 	)
 	(fp_line
 		(start 1.6 -1.25)
@@ -113,7 +113,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "9d633a56-b7c2-45cf-b098-0d38b1b99ef0")
+		(uuid "130d14df-0a1e-4864-94eb-2297ad36cc73")
 	)
 	(fp_line
 		(start 1.6 1.25)
@@ -123,7 +123,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "c16f482c-9711-4665-94ec-b1017a19de14")
+		(uuid "f8360e0d-0ed0-4f29-9f8d-2385a339a46d")
 	)
 	(pad "P$1" smd rect
 		(at -1.05 1)
@@ -132,7 +132,7 @@
 		(solder_mask_margin 0)
 		(solder_paste_margin 0)
 		(thermal_bridge_angle 0)
-		(uuid "68c3ba27-11ba-48f0-8495-fd9619952e57")
+		(uuid "5fb864e7-2e71-46cd-8633-f0e8edc195ef")
 	)
 	(pad "P$2" smd rect
 		(at 1.05 1)
@@ -141,7 +141,7 @@
 		(solder_mask_margin 0)
 		(solder_paste_margin 0)
 		(thermal_bridge_angle 0)
-		(uuid "fee47e99-ece8-4d09-bf40-968485f52e1d")
+		(uuid "a021386c-f448-4dac-8b6a-6af5bc85448d")
 	)
 	(pad "P$3" smd rect
 		(at 1.05 -1)
@@ -150,7 +150,7 @@
 		(solder_mask_margin 0)
 		(solder_paste_margin 0)
 		(thermal_bridge_angle 0)
-		(uuid "42209050-1e53-4174-8494-e555c32a5ac8")
+		(uuid "8327fb22-4bd7-4961-8d99-320fbab721b8")
 	)
 	(pad "P$4" smd rect
 		(at -1.05 -1)
@@ -159,7 +159,18 @@
 		(solder_mask_margin 0)
 		(solder_paste_margin 0)
 		(thermal_bridge_angle 0)
-		(uuid "90c0589a-f218-48b0-8bf5-63e1ad7b319e")
+		(uuid "0428eee6-2c2a-4248-acec-98cd6c33284a")
 	)
 	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

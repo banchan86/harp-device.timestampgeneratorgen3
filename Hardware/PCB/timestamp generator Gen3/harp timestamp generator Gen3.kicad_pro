@@ -76,24 +76,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "hole_clearance|196189338|70846790|6e0b00c2-1aae-464b-aa42-a1463a225884|5763b0ef-cbfa-4102-8c8d-37d277af2f45",
-          ""
-        ],
-        [
-          "hole_clearance|196189338|70846790|8d82e2af-f59d-4715-ad03-c7cfd5a7eb0e|5763b0ef-cbfa-4102-8c8d-37d277af2f45",
-          ""
-        ],
-        [
-          "hole_clearance|202289338|70846790|393eef01-8754-412c-84bd-1a674f75b0a0|7b2c78b0-c8b6-4178-b8e4-1a3dbcd7529c",
-          ""
-        ],
-        [
-          "hole_clearance|202289338|70846790|ee8dd94d-2871-45a3-8e86-c667cb1158cd|7b2c78b0-c8b6-4178-b8e4-1a3dbcd7529c",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -296,7 +279,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "1.4"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -587,8 +570,9 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "manufacturing/gerbers",
+      "plot": "manufacturing/gerber/",
       "specctra_dsn": "",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -599,7 +583,7 @@
       "method": 0,
       "sort_order": 1
     },
-    "bom_export_filename": "manufacturing\\bom\\harp timestamp generator Gen3 BOM.csv",
+    "bom_export_filename": "manufacturing/bom/${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -640,8 +624,8 @@
         },
         {
           "group_by": false,
-          "label": "Exclude from BOM",
-          "name": "${EXCLUDE_FROM_BOM}",
+          "label": "Datasheet",
+          "name": "Datasheet",
           "show": false
         },
         {
@@ -658,8 +642,8 @@
         },
         {
           "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
+          "label": "Exclude from BOM",
+          "name": "${EXCLUDE_FROM_BOM}",
           "show": false
         },
         {
@@ -702,6 +686,18 @@
           "group_by": false,
           "label": "Datasheet1",
           "name": "Datasheet1",
+          "show": false
+        },
+        {
+          "group_by": true,
+          "label": "OEPS Description",
+          "name": "OEPS Description",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "DIGIKEY_PN",
+          "name": "DIGIKEY_PN",
           "show": false
         }
       ],

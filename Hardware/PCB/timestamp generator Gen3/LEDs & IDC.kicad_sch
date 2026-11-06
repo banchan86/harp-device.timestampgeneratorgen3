@@ -928,192 +928,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "R_US_1"
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_US"
-				(at -2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 1.016 -0.254 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor, US symbol"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_US_1_0_1"
-				(polyline
-					(pts
-						(xy 0 2.286) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.286) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_US_1_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Transistor_BJT:BC850"
 			(pin_names
 				(offset 0)
@@ -2405,18 +2219,6 @@
 		(uuid "938f4949-c236-4fc2-af2c-abf8dec5a7bb")
 	)
 	(junction
-		(at 130.81 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "94307196-078f-45b4-a662-3ab6844b62cd")
-	)
-	(junction
-		(at 125.73 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "97c61d72-fee4-47d3-97a1-bfed7606aa97")
-	)
-	(junction
 		(at 127 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2435,20 +2237,24 @@
 		(uuid "d70eab22-ab9c-449f-9a16-cd77d5523735")
 	)
 	(no_connect
-		(at 208.28 140.97)
+		(at 214.63 132.08)
 		(uuid "0b765a9a-064d-4a18-bb4a-3421e37ae316")
 	)
 	(no_connect
-		(at 208.28 143.51)
+		(at 214.63 134.62)
 		(uuid "3d4b9f68-e987-48b3-8ae6-6da5ad176af7")
 	)
 	(no_connect
-		(at 208.28 146.05)
+		(at 214.63 137.16)
 		(uuid "6d04a454-cfb1-49c9-bcb9-a1214d7654d7")
 	)
 	(no_connect
-		(at 220.98 146.05)
+		(at 227.33 137.16)
 		(uuid "737fa375-c603-47cd-83bb-f086de3ab818")
+	)
+	(no_connect
+		(at 214.63 129.54)
+		(uuid "c97afdfa-d357-4c3f-b65b-ba56c1b28a38")
 	)
 	(wire
 		(pts
@@ -2572,16 +2378,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 156.21) (xy 130.81 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13b4fb31-0134-467c-90eb-06e0887b8ea0")
-	)
-	(wire
-		(pts
 			(xy 127 113.03) (xy 127 114.3)
 		)
 		(stroke
@@ -2682,16 +2478,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 165.1) (xy 130.81 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28bcbc48-4f99-4395-8ce5-fd9014c30fde")
-	)
-	(wire
-		(pts
 			(xy 116.84 133.35) (xy 113.03 133.35)
 		)
 		(stroke
@@ -2752,16 +2538,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 156.21) (xy 125.73 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3eae517d-6fdc-46c9-bdbb-4b0a5b310796")
-	)
-	(wire
-		(pts
 			(xy 91.44 88.9) (xy 92.71 88.9)
 		)
 		(stroke
@@ -2782,16 +2558,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 167.64) (xy 125.73 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4492334c-6863-4401-bd17-fe80341a7b94")
-	)
-	(wire
-		(pts
 			(xy 201.93 45.72) (xy 204.47 45.72)
 		)
 		(stroke
@@ -2802,7 +2568,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 140.97) (xy 231.14 140.97)
+			(xy 227.33 132.08) (xy 237.49 132.08)
 		)
 		(stroke
 			(width 0.1524)
@@ -2869,16 +2635,6 @@
 			(type default)
 		)
 		(uuid "5b894721-8c0f-4249-9e28-356f4bda5175")
-	)
-	(wire
-		(pts
-			(xy 135.89 168.91) (xy 135.89 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d4d28de-3c68-4641-b668-15b61f44b574")
 	)
 	(wire
 		(pts
@@ -2952,7 +2708,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 143.51) (xy 231.14 143.51)
+			(xy 227.33 134.62) (xy 237.49 134.62)
 		)
 		(stroke
 			(width 0.1524)
@@ -3012,16 +2768,6 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 138.43) (xy 208.28 138.43)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "8a8716fa-5e8b-4c94-8bf1-bdad62759499")
-	)
-	(wire
-		(pts
 			(xy 39.37 88.9) (xy 40.64 88.9)
 		)
 		(stroke
@@ -3072,7 +2818,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 152.4) (xy 207.01 148.59)
+			(xy 213.36 143.51) (xy 213.36 139.7)
 		)
 		(stroke
 			(width 0.1524)
@@ -3142,16 +2888,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 179.07) (xy 160.02 179.07)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "ab1f58b4-f322-40ae-b43c-2a111c0f18da")
-	)
-	(wire
-		(pts
 			(xy 157.48 20.32) (xy 157.48 22.86)
 		)
 		(stroke
@@ -3202,16 +2938,6 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 179.07) (xy 148.59 179.07)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "b2c85c2b-445f-436f-8cd2-52c59406171f")
-	)
-	(wire
-		(pts
 			(xy 55.88 168.91) (xy 55.88 166.37)
 		)
 		(stroke
@@ -3239,16 +2965,6 @@
 			(type solid)
 		)
 		(uuid "bde107be-4a49-4e08-8a30-ead7e6144730")
-	)
-	(wire
-		(pts
-			(xy 125.73 154.94) (xy 125.73 156.21)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "bfea3823-a20b-4476-9738-48bfbe80fdd8")
 	)
 	(wire
 		(pts
@@ -3392,16 +3108,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 165.1) (xy 130.81 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d880d9b6-0fba-4a53-ac9b-880ce670d470")
-	)
-	(wire
-		(pts
 			(xy 246.38 88.9) (xy 250.19 88.9)
 		)
 		(stroke
@@ -3432,23 +3138,13 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 138.43) (xy 231.14 138.43)
+			(xy 227.33 129.54) (xy 237.49 129.54)
 		)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(uuid "e51153e0-af78-4571-b92b-086cd1f63ac6")
-	)
-	(wire
-		(pts
-			(xy 120.65 179.07) (xy 118.11 179.07)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "e6d459f4-5324-4baa-b25d-7a560dfb003f")
 	)
 	(wire
 		(pts
@@ -3482,7 +3178,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 148.59) (xy 224.79 148.59)
+			(xy 227.33 139.7) (xy 231.14 139.7)
 		)
 		(stroke
 			(width 0.1524)
@@ -3492,7 +3188,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 148.59) (xy 208.28 148.59)
+			(xy 213.36 139.7) (xy 214.63 139.7)
 		)
 		(stroke
 			(width 0.1524)
@@ -3570,18 +3266,8 @@
 		)
 		(uuid "fb6354dc-02c5-4c4f-9cba-90c307177375")
 	)
-	(wire
-		(pts
-			(xy 125.73 156.21) (xy 125.73 157.48)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "fefb3b85-2e22-4ee1-a2da-bd8fda103aa7")
-	)
 	(label "RX"
-		(at 231.14 143.51 0)
+		(at 237.49 134.62 0)
 		(effects
 			(font
 				(size 1.2446 1.2446)
@@ -3590,18 +3276,8 @@
 		)
 		(uuid "133a42b3-dbed-40e7-953a-8d43f74ce79b")
 	)
-	(label "BLIGHT_EN"
-		(at 195.58 138.43 0)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "1e79bfbd-966d-4c8f-8863-6c6babf328a8")
-	)
 	(label "IDC_CLOCK_OUT"
-		(at 231.14 138.43 0)
+		(at 237.49 129.54 0)
 		(effects
 			(font
 				(size 1.2446 1.2446)
@@ -3630,16 +3306,6 @@
 		)
 		(uuid "462a9aa2-12ce-4cfa-b8c4-845c992f45f0")
 	)
-	(label "BLIGHT_EN"
-		(at 173.99 179.07 180)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify right bottom)
-		)
-		(uuid "84c0df80-eff7-43a0-b6c2-d838a25664eb")
-	)
 	(label "IDC_CLOCK_OUT"
 		(at 175.26 133.35 180)
 		(effects
@@ -3651,7 +3317,7 @@
 		(uuid "c0ee40c2-83e1-405d-bdba-b078030429e8")
 	)
 	(label "TX"
-		(at 231.14 140.97 0)
+		(at 237.49 132.08 0)
 		(effects
 			(font
 				(size 1.2446 1.2446)
@@ -3759,17 +3425,6 @@
 		)
 		(uuid "7c07f3ec-bf77-4e90-8701-be5dc1388032")
 	)
-	(hierarchical_label "BLIGHT_EN_UC"
-		(shape input)
-		(at 118.11 179.07 180)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify right)
-		)
-		(uuid "8d512f63-3bcc-4802-9f4b-56d5a4eb934b")
-	)
 	(hierarchical_label "LED_CLK_3"
 		(shape input)
 		(at 27.94 88.9 180)
@@ -3826,7 +3481,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00e3e88b-31a4-43a4-b3df-d5fa25d50aaa")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR085"
 			(at 55.88 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -3887,7 +3542,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR02")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -3906,7 +3561,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04954051-b55b-4d2d-9bfc-90a7bac82e9f")
-		(property "Reference" "R11"
+		(property "Reference" "R47"
 			(at 153.67 125.73 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4015,6 +3670,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0603 100Ω ±1% 0.333W   [CRCW0603100RFKEAHP] [SMD]"
+			(at 153.67 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "401887ae-0b9e-48b3-a704-e40a3dfbdc78")
 		)
@@ -4024,7 +3690,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R11")
+					(reference "R47")
 					(unit 1)
 				)
 			)
@@ -4041,7 +3707,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "07df0260-bbb0-4c58-abb1-91a22435a6f4")
-		(property "Reference" "R31"
+		(property "Reference" "R46"
 			(at 254 81.28 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4150,6 +3816,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±1% 0.063W   [CRCW04021K00FKED] [SMD]"
+			(at 254 88.9 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1eb5f443-fe94-4978-995c-7bf218135df0")
 		)
@@ -4159,7 +3836,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R31")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -4177,7 +3854,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09eda7fc-b950-4dba-8413-53d417406ac6")
-		(property "Reference" "T4"
+		(property "Reference" "T7"
 			(at 101.6 86.995 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4288,6 +3965,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "TRANSISTOR:   BJT NPN 45V 0.1A   [BC850C,215] [SOT-23-3]"
+			(at 97.79 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cf69d60b-59a3-4a4b-bbfa-037ef8aa3844")
 		)
@@ -4300,7 +3988,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "T4")
+					(reference "T7")
 					(unit 1)
 				)
 			)
@@ -4319,7 +4007,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0e574c77-656f-4ffe-8e89-1b2ccfa34406")
-		(property "Reference" "R10"
+		(property "Reference" "R49"
 			(at 82.55 171.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4428,6 +4116,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0603 100Ω ±1% 0.333W   [CRCW0603100RFKEAHP] [SMD]"
+			(at 82.55 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "310a3387-9742-460a-b088-d89438ef23d2")
 		)
@@ -4437,7 +4136,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R10")
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -4455,7 +4154,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "133776a6-5dbc-4537-ab72-9c0f6a75b451")
-		(property "Reference" "T9"
+		(property "Reference" "T5"
 			(at 270.51 43.815 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4566,6 +4265,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "TRANSISTOR:   BJT NPN 45V 0.1A   [BC850C,215] [SOT-23-3]"
+			(at 265.43 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0327853d-ffdd-498b-9c0b-012657c141cd")
 		)
@@ -4578,7 +4288,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "T9")
+					(reference "T5")
 					(unit 1)
 				)
 			)
@@ -4595,7 +4305,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1444785f-5482-47d3-8b2a-9500d92787e2")
-		(property "Reference" "#+3V8"
+		(property "Reference" "#+3V015"
 			(at 100.33 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -4668,7 +4378,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#+3V8")
+					(reference "#+3V015")
 					(unit 1)
 				)
 			)
@@ -4676,7 +4386,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x05_Odd_Even")
-		(at 213.36 143.51 0)
+		(at 219.71 134.62 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4686,7 +4396,7 @@
 		(dnp no)
 		(uuid "14587930-a0e8-4156-893a-ac6bd4606f8e")
 		(property "Reference" "SV1"
-			(at 213.868 133.858 0)
+			(at 220.218 124.968 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4696,7 +4406,7 @@
 			)
 		)
 		(property "Value" "SBH11-PBPC-D05-RA-BK"
-			(at 214.63 134.62 0)
+			(at 220.98 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4707,7 +4417,7 @@
 			)
 		)
 		(property "Footprint" "Connector_IDC:IDC-Header_2x05_P2.54mm_Horizontal"
-			(at 213.36 143.51 0)
+			(at 219.71 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4718,7 +4428,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 213.36 143.51 0)
+			(at 219.71 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4729,7 +4439,7 @@
 			)
 		)
 		(property "Description" "HEADER 2.54MM R/A 2x5POS"
-			(at 213.36 143.51 0)
+			(at 219.71 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4740,7 +4450,7 @@
 			)
 		)
 		(property "MPN" "SBH11-PBPC-D05-RA-BK"
-			(at 213.36 143.51 0)
+			(at 219.71 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4752,7 +4462,7 @@
 			)
 		)
 		(property "OEPSPN" "OEPS070027"
-			(at 213.36 143.51 0)
+			(at 219.71 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4763,7 +4473,7 @@
 			)
 		)
 		(property "TempCo" ""
-			(at 213.36 143.51 0)
+			(at 219.71 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4774,7 +4484,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 213.36 143.51 0)
+			(at 219.71 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4785,7 +4495,18 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 213.36 143.51 0)
+			(at 219.71 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "CONNECTOR:   HEADER 2.54MM R/A 2x5POS   [SBH11-PBPC-D05-RA-BK] [TH]"
+			(at 219.71 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4846,7 +4567,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "14bd630c-8d87-430b-aa9b-b4fe7c591927")
-		(property "Reference" "C30"
+		(property "Reference" "C42"
 			(at 67.31 121.285 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4957,6 +4678,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 50V ±10% X7R   [CGA2B3X7R1H104K050BB] [SMD]"
+			(at 63.5 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0120a011-f226-4d2e-af18-692b4cc6e447")
 		)
@@ -4966,7 +4698,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "C30")
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -4984,7 +4716,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "156cfd15-c01a-4ef5-bd21-138c0eedbe63")
-		(property "Reference" "T8"
+		(property "Reference" "T9"
 			(at 213.36 86.995 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5095,6 +4827,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "TRANSISTOR:   BJT NPN 45V 0.1A   [BC850C,215] [SOT-23-3]"
+			(at 209.55 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ea71cb4c-4f23-469e-9b5c-408b60019f4f")
 		)
@@ -5107,7 +4850,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "T8")
+					(reference "T9")
 					(unit 1)
 				)
 			)
@@ -5125,7 +4868,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "15a4ec91-7cd0-4e39-9134-bb28da6278f7")
-		(property "Reference" "T2"
+		(property "Reference" "T6"
 			(at 49.53 86.995 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5236,6 +4979,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "TRANSISTOR:   BJT NPN 45V 0.1A   [BC850C,215] [SOT-23-3]"
+			(at 45.72 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8e9a1f0d-e105-41de-ae67-39e627cbd1da")
 		)
@@ -5248,7 +5002,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "T2")
+					(reference "T6")
 					(unit 1)
 				)
 			)
@@ -5377,6 +5131,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "DIODE:   LED DUAL Red 635nm 20mA   [569-0111-100F] [TH]"
+			(at 157.48 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "A1"
 			(uuid "05914589-eca7-4754-95ab-1b79d06a4493")
 		)
@@ -5409,7 +5174,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1cfdcbc0-7418-498c-94e1-a018fe5b72d9")
-		(property "Reference" "R30"
+		(property "Reference" "R45"
 			(at 199.39 81.28 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5518,6 +5283,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±1% 0.063W   [CRCW04021K00FKED] [SMD]"
+			(at 199.39 88.9 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "477013b2-787d-44f9-85f2-ad0c4a76a799")
 		)
@@ -5527,7 +5303,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R30")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -5545,7 +5321,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f331d42-7ad7-4846-af8f-859c7fe7f41a")
-		(property "Reference" "R35"
+		(property "Reference" "R29"
 			(at 160.02 33.655 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5656,6 +5432,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 330Ω ±1% 0.063W   [RC0402FR-07330RL] [SMD]"
+			(at 157.48 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "20f2cda7-2caf-4ef0-95a4-ab030d89348e")
 		)
@@ -5665,7 +5452,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R35")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -5682,7 +5469,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "21a3834e-8035-421f-ab91-93da6667b522")
-		(property "Reference" "#+3V12"
+		(property "Reference" "#+3V023"
 			(at 267.97 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -5755,7 +5542,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#+3V12")
+					(reference "#+3V023")
 					(unit 1)
 				)
 			)
@@ -5874,6 +5661,17 @@
 			)
 		)
 		(property "Voltage" ""
+			(at 100.33 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OEPS Description" "DIODE:   LED DUAL Red 635nm 20mA   [569-0111-100F] [TH]"
 			(at 100.33 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -6028,6 +5826,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "DIODE:   LED DUAL Red 635nm 20mA   [569-0111-100F] [TH]"
+			(at 267.97 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "C1"
 			(uuid "065a607b-3c3d-48b3-aa65-a29eaf4747c5")
 		)
@@ -6172,6 +5981,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "TRANSISTOR:   BJT NPN 45V 0.1A   [BC850C,215] [SOT-23-3]"
+			(at 265.43 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a4ecff42-9b96-47c3-b7c6-99c72e49ee87")
 		)
@@ -6202,7 +6022,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "261c77b9-eed2-4ca2-95a9-fac17a993cdc")
-		(property "Reference" "IC7"
+		(property "Reference" "IC16"
 			(at 123.8819 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6312,6 +6132,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "IC:   BUFFER NON-INVERT 1CH 3-STATE   [M74VHC1GT126DF1G] [SC-70-5]"
+			(at 132.08 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "7f8833c3-b479-47da-96b5-d95951d43b95")
 		)
@@ -6330,97 +6161,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "IC7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 125.73 154.94 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "274aa1f2-9515-4a39-be34-08cbb152f455")
-		(property "Reference" "#P+6"
-			(at 125.73 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 123.952 151.638 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.73 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 125.73 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DIGKEYPN" ""
-			(at 125.73 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(pin "1"
-			(uuid "4e9d66fc-4f80-478b-9a95-012a78b1ed05")
-		)
-		(instances
-			(project "harp timestamp generator Gen3"
-				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#P+6")
+					(reference "IC16")
 					(unit 1)
 				)
 			)
@@ -6438,7 +6179,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a155e76-9f15-4eec-81af-24c149ea78e2")
-		(property "Reference" "T6"
+		(property "Reference" "T8"
 			(at 158.75 86.995 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6549,6 +6290,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "TRANSISTOR:   BJT NPN 45V 0.1A   [BC850C,215] [SOT-23-3]"
+			(at 154.94 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c9fd18c4-4200-4f98-9030-c46d19e50a70")
 		)
@@ -6561,7 +6313,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "T6")
+					(reference "T8")
 					(unit 1)
 				)
 			)
@@ -6580,7 +6332,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c63a38a-89fe-411e-8b69-c835ba6b72be")
-		(property "Reference" "#PWR52"
+		(property "Reference" "#PWR078"
 			(at 212.09 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -6641,7 +6393,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR52")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -6659,7 +6411,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2cb4bfad-f902-4e72-a10a-3b2c9ace1db9")
-		(property "Reference" "R34"
+		(property "Reference" "R28"
 			(at 102.87 33.655 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6770,6 +6522,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 330Ω ±1% 0.063W   [RC0402FR-07330RL] [SMD]"
+			(at 100.33 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "5fecbe02-ed01-4e7b-899e-0e208b5e4157")
 		)
@@ -6779,7 +6542,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R34")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -6796,7 +6559,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2d3b10a7-d9b1-4cf1-89c6-532b9cd88b60")
-		(property "Reference" "#+3V9"
+		(property "Reference" "#+3V016"
 			(at 157.48 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -6869,7 +6632,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#+3V9")
+					(reference "#+3V016")
 					(unit 1)
 				)
 			)
@@ -6888,7 +6651,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2d8766c5-e1ef-478a-80f3-96d86fea8b63")
-		(property "Reference" "R27"
+		(property "Reference" "R42"
 			(at 35.56 81.28 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6997,6 +6760,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±1% 0.063W   [CRCW04021K00FKED] [SMD]"
+			(at 35.56 88.9 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "979c417e-8590-416b-9fe0-704b7afc29cc")
 		)
@@ -7006,7 +6780,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R27")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -7025,7 +6799,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f2ad92b-15f8-4565-9b05-51e5a4eb16ca")
-		(property "Reference" "#PWR9"
+		(property "Reference" "#PWR070"
 			(at 48.26 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -7086,7 +6860,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR9")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -7104,7 +6878,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "34c106df-590a-481f-add5-441b643ae306")
-		(property "Reference" "R41"
+		(property "Reference" "R38"
 			(at 102.87 76.835 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7215,6 +6989,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 330Ω ±1% 0.063W   [RC0402FR-07330RL] [SMD]"
+			(at 100.33 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e3f87f12-6a81-4217-99cd-ce14fa530fb9")
 		)
@@ -7224,7 +7009,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R41")
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -7353,6 +7138,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "DIODE:   LED DUAL Red 635nm 20mA   [569-0111-100F] [TH]"
+			(at 48.26 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "C2"
 			(uuid "ddb2d75c-2561-4f8e-a73e-990a27c0d158")
 		)
@@ -7376,7 +7172,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 207.01 152.4 0)
+		(at 213.36 143.51 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -7387,8 +7183,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "39d59ee2-f0df-4d8b-938f-1f5b576ac1e7")
-		(property "Reference" "#PWR11"
-			(at 207.01 158.75 0)
+		(property "Reference" "#PWR084"
+			(at 213.36 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7399,7 +7195,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 204.47 153.6699 0)
+			(at 210.82 144.7799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7410,7 +7206,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 207.01 152.4 0)
+			(at 213.36 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7421,7 +7217,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 207.01 152.4 0)
+			(at 213.36 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7432,7 +7228,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 207.01 152.4 0)
+			(at 213.36 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7448,7 +7244,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR11")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -7466,7 +7262,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4014e453-f263-4790-8a4f-459fbb00e201")
-		(property "Reference" "R33"
+		(property "Reference" "R27"
 			(at 50.8 33.655 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7577,6 +7373,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 330Ω ±1% 0.063W   [RC0402FR-07330RL] [SMD]"
+			(at 48.26 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e38b7596-cda2-4803-80e3-16a7c747dbab")
 		)
@@ -7586,7 +7393,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R33")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -7603,7 +7410,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "40b9a143-dde0-460f-bb55-29bd70987694")
-		(property "Reference" "#+3V6"
+		(property "Reference" "#+3V019"
 			(at 48.26 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -7676,7 +7483,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#+3V6")
+					(reference "#+3V019")
 					(unit 1)
 				)
 			)
@@ -7694,7 +7501,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "453b104d-4775-479f-9a58-391ec438fa98")
-		(property "Reference" "R44"
+		(property "Reference" "R40"
 			(at 214.63 76.835 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7805,6 +7612,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 330Ω ±1% 0.063W   [RC0402FR-07330RL] [SMD]"
+			(at 212.09 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ac687e3a-89dc-4631-b078-5a9d810a8966")
 		)
@@ -7814,7 +7632,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R44")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -7832,7 +7650,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45737279-4332-4fb9-b81e-ee56afe5f96a")
-		(property "Reference" "#PWR94"
+		(property "Reference" "#PWR081"
 			(at 48.26 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -7893,7 +7711,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR94")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -7912,7 +7730,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46cb80b6-3450-4076-b391-aff188f9d7f0")
-		(property "Reference" "#PWR50"
+		(property "Reference" "#PWR072"
 			(at 157.48 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -7973,7 +7791,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR50")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -8102,6 +7920,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "DIODE:   LED DUAL Red 635nm 20mA   [569-0111-100F] [TH]"
+			(at 48.26 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "C1"
 			(uuid "e33ee8d1-6dd1-49ad-b77a-87148380c963")
 		)
@@ -8135,7 +7964,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4fae5f54-2866-4778-8916-19c249e83ee4")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR080"
 			(at 121.92 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -8196,7 +8025,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR044")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -8214,7 +8043,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "516e8289-fc6f-4249-a4a5-9d5ce9268f2b")
-		(property "Reference" "#PWR46"
+		(property "Reference" "#PWR086"
 			(at 66.04 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -8275,7 +8104,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR46")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -8294,7 +8123,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "52fda4ce-dbfa-4a20-a629-eef100f036b4")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR088"
 			(at 55.88 196.85 0)
 			(hide yes)
 			(show_name no)
@@ -8355,7 +8184,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR07")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -8372,7 +8201,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5cf26af2-c3a4-4b84-b987-e7af30f54091")
-		(property "Reference" "R25"
+		(property "Reference" "R36"
 			(at 254 38.1 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8481,6 +8310,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±1% 0.063W   [CRCW04021K00FKED] [SMD]"
+			(at 254 45.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "36e6b144-55eb-4ecb-8c83-91cf523f4503")
 		)
@@ -8490,165 +8330,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 125.73 167.64 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "602bc223-3a13-4e13-bc96-4c5d46d6b837")
-		(property "Reference" "#PWR62"
-			(at 125.73 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 123.19 168.9099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.73 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.73 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "16bf02c1-2a3a-477d-b6eb-993e56415d1d")
-		)
-		(instances
-			(project "harp timestamp generator Gen3"
-				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR62")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 224.79 148.59 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "644cea62-d91b-4357-b634-2d8b74caedfa")
-		(property "Reference" "#P+42"
-			(at 224.79 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 225.806 147.066 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 224.79 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 224.79 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 224.79 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "62f331c0-632a-456f-a762-7e02baa90be4")
-		)
-		(instances
-			(project "harp timestamp generator Gen3"
-				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#P+42")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -8777,6 +8459,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "DIODE:   LED DUAL Red 635nm 20mA   [569-0111-100F] [TH]"
+			(at 100.33 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "C1"
 			(uuid "1a2ab3fe-9db4-4997-b6aa-350900392f47")
 		)
@@ -8809,7 +8502,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "69cb395f-d9a1-4d3f-86d8-2e7fbbbb5743")
-		(property "Reference" "R28"
+		(property "Reference" "R43"
 			(at 87.63 81.28 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8918,6 +8611,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±1% 0.063W   [CRCW04021K00FKED] [SMD]"
+			(at 87.63 88.9 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3ecde865-b628-4973-b6c7-a9ca53297038")
 		)
@@ -8927,145 +8631,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 125.73 161.29 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7196a86b-dc89-4a92-9b34-7dbe7b776e79")
-		(property "Reference" "C38"
-			(at 121.92 159.385 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100nF"
-			(at 121.92 163.195 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 125.73 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "SMD CER 0402 100nF 50V ±10% X7R"
-			(at 125.73 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CGA2B3X7R1H104K050BB"
-			(at 125.73 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "OEPSPN" "OEPS010016"
-			(at 125.73 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "TempCo" "X7R"
-			(at 125.73 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "10%"
-			(at 125.73 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" "50V"
-			(at 125.73 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8bc8275b-35a1-441b-9a1c-5de4dab6c440")
-		)
-		(pin "2"
-			(uuid "1325bcfe-c6fd-4487-9add-6458abc54418")
-		)
-		(instances
-			(project "harp timestamp generator Gen3"
-				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "C38")
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -9082,7 +8648,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "71cb2ffc-32f6-4943-bb3d-f13fd042762a")
-		(property "Reference" "#+3V13"
+		(property "Reference" "#+3V018"
 			(at 267.97 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -9155,7 +8721,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#+3V13")
+					(reference "#+3V018")
 					(unit 1)
 				)
 			)
@@ -9284,6 +8850,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "DIODE:   LED DUAL Red 635nm 20mA   [569-0111-100F] [TH]"
+			(at 157.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "A2"
 			(uuid "2627a794-bc33-4056-bdfe-da9cc2cf4815")
 		)
@@ -9316,7 +8893,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "87a858cb-1d73-4fd8-a2ab-e0f61df6e626")
-		(property "Reference" "#+3V10"
+		(property "Reference" "#+3V021"
 			(at 157.48 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -9389,7 +8966,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#+3V10")
+					(reference "#+3V021")
 					(unit 1)
 				)
 			)
@@ -9407,7 +8984,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "899cf1a2-1342-4bb5-ba9d-0aa11b0e532a")
-		(property "Reference" "R40"
+		(property "Reference" "R37"
 			(at 50.8 76.835 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9518,6 +9095,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 330Ω ±1% 0.063W   [RC0402FR-07330RL] [SMD]"
+			(at 48.26 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "37cbab40-73e1-437a-93e2-8a98439d034b")
 		)
@@ -9527,7 +9115,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R40")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -9544,7 +9132,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8a8b49ee-9de7-4222-8b56-d2a1d0e2e444")
-		(property "Reference" "R22"
+		(property "Reference" "R33"
 			(at 86.36 38.1 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9653,6 +9241,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±1% 0.063W   [CRCW04021K00FKED] [SMD]"
+			(at 86.36 45.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1b2bd49a-c02a-405f-9ee1-bdbd393d71c1")
 		)
@@ -9662,7 +9261,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R22")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -9681,7 +9280,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8cc31709-3ec5-4a44-9b0c-9c05b60fda85")
-		(property "Reference" "#PWR51"
+		(property "Reference" "#PWR077"
 			(at 157.48 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -9742,7 +9341,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR51")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -9759,7 +9358,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9288c139-a3c8-4b0f-87c9-eb73e0d0dc50")
-		(property "Reference" "#+3V14"
+		(property "Reference" "#+3V017"
 			(at 212.09 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -9832,7 +9431,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#+3V14")
+					(reference "#+3V017")
 					(unit 1)
 				)
 			)
@@ -9961,6 +9560,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "DIODE:   LED DUAL Red 635nm 20mA   [569-0111-100F] [TH]"
+			(at 212.09 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "C1"
 			(uuid "4fa5fa6a-f2e0-4565-8e48-e1b656cfbf94")
 		)
@@ -9995,7 +9605,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e3dae7d-5681-4395-a752-887e26f49fc2")
-		(property "Reference" "#PWR32"
+		(property "Reference" "#PWR082"
 			(at 63.5 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -10056,87 +9666,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 130.81 189.23 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9f2a3627-3f0d-4391-8471-97bccbb0ec24")
-		(property "Reference" "#PWR022"
-			(at 130.81 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 128.27 190.4999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2ecf6223-21ae-473a-80b2-0e6560292711")
-		)
-		(instances
-			(project "harp timestamp generator Gen3"
-				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR022")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -10265,6 +9795,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "TRANSISTOR:   BJT NPN 45V 0.1A   [BC850C,215] [SOT-23-3]"
+			(at 45.72 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "006d8dbd-7ddc-45ce-ae02-5288806b72b6")
 		)
@@ -10296,7 +9837,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a320a018-571f-4906-8075-d293481e6ecc")
-		(property "Reference" "#PWR79"
+		(property "Reference" "#PWR074"
 			(at 267.97 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -10357,143 +9898,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR79")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "R_US_1")
-		(lib_id "Device:R_US")
-		(at 156.21 179.07 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a3ee8cba-8efe-4695-97a4-78798b3bd806")
-		(property "Reference" "R12"
-			(at 156.21 171.45 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-			)
-		)
-		(property "Value" "100R"
-			(at 156.21 175.26 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 156.21 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "SMD 0603 100Ω ±1% 0.333W"
-			(at 156.21 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CRCW0603100RFKEAHP"
-			(at 156.21 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "OEPSPN" "OEPS020042"
-			(at 156.21 179.07 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "TempCo" ""
-			(at 156.21 179.07 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "1%"
-			(at 156.21 179.07 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 156.21 179.07 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "41d4ed64-239f-4592-b952-0bfc782f5a11")
-		)
-		(pin "2"
-			(uuid "e0d500fd-7e53-40f2-88b8-c4d5c046d5cd")
-		)
-		(instances
-			(project "harp timestamp generator Gen3"
-				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R12")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -10511,7 +9916,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9110865-9ab1-4cfe-8117-07002f475e92")
-		(property "Reference" "R36"
+		(property "Reference" "R30"
 			(at 214.63 33.655 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10622,6 +10027,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 330Ω ±1% 0.063W   [RC0402FR-07330RL] [SMD]"
+			(at 212.09 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "28a5549e-a85d-4653-b0cd-d4ec15bdc8c9")
 		)
@@ -10631,7 +10047,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R36")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -10650,7 +10066,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9c17596-789b-404a-a9c2-a55aa9f249e6")
-		(property "Reference" "R16"
+		(property "Reference" "R48"
 			(at 68.58 139.065 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10761,6 +10177,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 10kΩ ±1% 0.063W   [CRCW040210K0FKED] [SMD]"
+			(at 66.04 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "cb17335c-2e7d-4189-9f71-a8342e8ddf5a")
 		)
@@ -10770,7 +10197,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R16")
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -10787,7 +10214,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a9d3d5ec-fbc4-4ab4-9b55-0e3742696cd2")
-		(property "Reference" "R23"
+		(property "Reference" "R34"
 			(at 143.51 38.1 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10896,6 +10323,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±1% 0.063W   [CRCW04021K00FKED] [SMD]"
+			(at 143.51 45.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7d145bea-1197-4657-af52-45a8ab7c0983")
 		)
@@ -10905,7 +10343,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R23")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -10922,7 +10360,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aac4a345-e433-4b89-8d71-91190744a43b")
-		(property "Reference" "R21"
+		(property "Reference" "R32"
 			(at 35.56 38.1 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11031,6 +10469,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±1% 0.063W   [CRCW04021K00FKED] [SMD]"
+			(at 35.56 45.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a31108db-d1ea-480c-b54e-297d27ace831")
 		)
@@ -11040,7 +10489,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R21")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -11169,6 +10618,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "DIODE:   LED DUAL Red 635nm 20mA   [569-0111-100F] [TH]"
+			(at 212.09 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "A2"
 			(uuid "dcf50653-e291-44e2-8504-45a5845ff543")
 		)
@@ -11202,7 +10662,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0087577-6356-460a-ad23-c5a68ac136c5")
-		(property "Reference" "C31"
+		(property "Reference" "C43"
 			(at 44.45 164.465 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11313,6 +10773,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 50V ±10% X7R   [CGA2B3X7R1H104K050BB] [SMD]"
+			(at 48.26 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "684ea9de-140b-430e-b1d7-9e521d2449e0")
 		)
@@ -11322,7 +10793,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "C31")
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -11340,7 +10811,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4a4d8a7-8156-4880-a2a2-1a9863392911")
-		(property "Reference" "T7"
+		(property "Reference" "T4"
 			(at 214.63 43.815 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11451,6 +10922,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "TRANSISTOR:   BJT NPN 45V 0.1A   [BC850C,215] [SOT-23-3]"
+			(at 209.55 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a97a1c9d-cdd1-4ef4-850d-bcafe10fa9b6")
 		)
@@ -11463,7 +10945,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "T7")
+					(reference "T4")
 					(unit 1)
 				)
 			)
@@ -11481,7 +10963,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b98639bf-1b36-4368-9170-2caf8cef8a34")
-		(property "Reference" "#PWR23"
+		(property "Reference" "#PWR083"
 			(at 127 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -11542,7 +11024,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR23")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -11560,7 +11042,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b9d40006-8fc5-4ddd-98ec-469ed77f894f")
-		(property "Reference" "R45"
+		(property "Reference" "R41"
 			(at 270.51 76.835 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11671,6 +11153,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 330Ω ±1% 0.063W   [RC0402FR-07330RL] [SMD]"
+			(at 267.97 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "29ff1ec0-da29-43b4-902b-e0c2bfaf7492")
 		)
@@ -11680,7 +11173,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R45")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -11699,7 +11192,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba9f0f4f-4818-47fb-8ce0-f156a37ef4c3")
-		(property "Reference" "#PWR49"
+		(property "Reference" "#PWR076"
 			(at 100.33 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -11760,150 +11253,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR49")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "harp_timestamp_generator_Gen3:M74VHC1GT126DF1G")
-		(at 135.89 179.07 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bd1b0c60-8516-449d-a439-af8bfc65a5e2")
-		(property "Reference" "IC8"
-			(at 125.476 181.102 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "M74VHC1GT126DF1G"
-			(at 116.84 184.658 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
-			(at 135.89 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "BUFFER NON-INVERT 1CH 3-STATE"
-			(at 135.89 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "M74VHC1GT126DF1G"
-			(at 135.89 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "OEPSPN" "OEPS080033"
-			(at 135.89 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "TempCo" ""
-			(at 135.89 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" ""
-			(at 135.89 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 135.89 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "c80ca6a1-69c1-4a3a-8ea3-ec53b8816dbd")
-		)
-		(pin "3"
-			(uuid "9ca69d0d-990d-4570-9246-f957d121d5d7")
-		)
-		(pin "4"
-			(uuid "bf263835-7378-40e5-9d36-798abfd0521c")
-		)
-		(pin "2"
-			(uuid "501ae0e4-90fd-4f71-9711-710eae0c1dab")
-		)
-		(pin "1"
-			(uuid "558f1d2a-ba94-4481-9e1b-126a26084373")
-		)
-		(instances
-			(project "harp timestamp generator Gen3"
-				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "IC8")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -12032,6 +11382,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "DIODE:   LED DUAL Red 635nm 20mA   [569-0111-100F] [TH]"
+			(at 267.97 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "A1"
 			(uuid "de205713-6305-4ee2-afca-1be88f019e9a")
 		)
@@ -12064,7 +11425,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bec7d443-bdcf-4326-925e-da3d5ec4a90a")
-		(property "Reference" "#+3V11"
+		(property "Reference" "#+3V022"
 			(at 212.09 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -12137,7 +11498,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#+3V11")
+					(reference "#+3V022")
 					(unit 1)
 				)
 			)
@@ -12154,7 +11515,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c0cea248-7e51-494f-9763-16af810e14a0")
-		(property "Reference" "IC9"
+		(property "Reference" "IC18"
 			(at 50.546 181.102 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12262,6 +11623,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "IC:   BUFFER NON-INVERT 1CH 3-STATE   [M74VHC1GT126DF1G] [SC-70-5]"
+			(at 60.96 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "a1de293a-e938-4620-987f-04b84f22aeb5")
 		)
@@ -12280,7 +11652,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "IC9")
+					(reference "IC18")
 					(unit 1)
 				)
 			)
@@ -12298,7 +11670,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c3fe3a6f-ed72-4364-a422-4a491e8d5083")
-		(property "Reference" "C37"
+		(property "Reference" "C41"
 			(at 118.11 116.205 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12409,6 +11781,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "CAPACITOR:   SMD CER 0402 100nF 50V ±10% X7R   [CGA2B3X7R1H104K050BB] [SMD]"
+			(at 121.92 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "56ef8f2a-0391-46b6-9979-27f9b6ae7dd2")
 		)
@@ -12418,7 +11801,85 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "C37")
+					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 48.26 160.02 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c5be0663-1090-4d37-ad3e-6aacd935f3d2")
+		(property "Reference" "#P+021"
+			(at 48.26 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Vin"
+			(at 48.006 155.448 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 48.26 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ac1aeba2-133e-464b-9682-44f345e85c49")
+		)
+		(instances
+			(project "harp timestamp generator Gen3"
+				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
+					(reference "#P+021")
 					(unit 1)
 				)
 			)
@@ -12436,7 +11897,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c68c4cdb-83bd-4285-a082-abcbeec779fa")
-		(property "Reference" "#+3V26"
+		(property "Reference" "#+3V024"
 			(at 63.5 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -12509,7 +11970,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#+3V26")
+					(reference "#+3V024")
 					(unit 1)
 				)
 			)
@@ -12527,7 +11988,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ca1382de-2d62-4fc9-9b71-e3a76739b616")
-		(property "Reference" "IC10"
+		(property "Reference" "IC17"
 			(at 48.26 138.938 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12637,6 +12098,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "IC:   BUFFER NON-INVERT 1CH 3-STATE   [SN74LVC1G125DBVT] [SOT-23-5]"
+			(at 50.8 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "53bb534e-caa8-4b5d-8ce6-b4a8a52e6d21")
 		)
@@ -12655,7 +12127,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "IC10")
+					(reference "IC17")
 					(unit 1)
 				)
 			)
@@ -12672,7 +12144,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cba46c3c-c435-419e-a4e7-2fc5f66262c8")
-		(property "Reference" "R29"
+		(property "Reference" "R44"
 			(at 144.78 81.28 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12781,6 +12253,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±1% 0.063W   [CRCW04021K00FKED] [SMD]"
+			(at 144.78 88.9 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ac8a6dcf-6ef4-4daf-b384-480ed603ed0f")
 		)
@@ -12790,97 +12273,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 127 113.03 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cbfd1d08-387a-4238-9bea-f836375f1312")
-		(property "Reference" "#P+12"
-			(at 127 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 128.524 108.458 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 127 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 127 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DIGKEYPN" ""
-			(at 127 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(pin "1"
-			(uuid "e87924c2-2fae-442a-9f15-ad5b44873a78")
-		)
-		(instances
-			(project "harp timestamp generator Gen3"
-				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#P+12")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -12899,7 +12292,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d30d5890-073a-4f4e-a218-44d3bbf19315")
-		(property "Reference" "#PWR48"
+		(property "Reference" "#PWR071"
 			(at 100.33 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -12960,7 +12353,85 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR48")
+					(reference "#PWR071")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 127 113.03 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d5b94e3f-7740-4d50-9451-2f5b09c37a37")
+		(property "Reference" "#P+019"
+			(at 127 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Vin"
+			(at 126.746 108.458 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 127 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "36ef58a7-3d6e-447f-8025-a2b41552fbe3")
+		)
+		(instances
+			(project "harp timestamp generator Gen3"
+				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
+					(reference "#P+019")
 					(unit 1)
 				)
 			)
@@ -12979,7 +12450,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d93a0f0e-277c-499f-b114-c8d0a9433701")
-		(property "Reference" "#PWR102"
+		(property "Reference" "#PWR079"
 			(at 267.97 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -13040,7 +12511,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR102")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -13048,7 +12519,8 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 48.26 160.02 0)
+		(at 231.14 139.7 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13056,9 +12528,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "dcd2e8af-1632-4c4a-86ab-aaaac4b9c5f9")
-		(property "Reference" "#P+2"
-			(at 48.26 160.02 0)
+		(uuid "de17b246-16d2-49ae-95bb-a4ff72cf60f6")
+		(property "Reference" "#P+020"
+			(at 231.14 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13068,19 +12540,18 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
-			(at 47.752 157.226 0)
+		(property "Value" "Vin"
+			(at 233.426 136.906 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.778 1.5113)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 160.02 0)
+			(at 231.14 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13091,7 +12562,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 160.02 0)
+			(at 231.14 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13102,7 +12573,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 48.26 160.02 0)
+			(at 231.14 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13110,27 +12581,15 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "DIGKEYPN" ""
-			(at 48.26 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
 			)
 		)
 		(pin "1"
-			(uuid "beeac5e8-dfbd-4d86-996f-9eb36ba407eb")
+			(uuid "3e0fe1c1-b7c5-4dde-8002-238cb34afff9")
 		)
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#P+2")
+					(reference "#P+020")
 					(unit 1)
 				)
 			)
@@ -13149,7 +12608,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1fe7fdf-7359-4e72-b973-00fab73eb326")
-		(property "Reference" "#PWR6"
+		(property "Reference" "#PWR087"
 			(at 48.26 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -13210,7 +12669,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR6")
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -13228,7 +12687,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e54bb9ed-fd72-4a3c-80a5-896cd0636aad")
-		(property "Reference" "T5"
+		(property "Reference" "T3"
 			(at 160.02 43.815 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13339,6 +12798,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "TRANSISTOR:   BJT NPN 45V 0.1A   [BC850C,215] [SOT-23-3]"
+			(at 154.94 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f02626dc-04fb-4a1a-99c1-1ed25187a3f8")
 		)
@@ -13351,7 +12821,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "T5")
+					(reference "T3")
 					(unit 1)
 				)
 			)
@@ -13369,7 +12839,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e703e99a-daf7-4c83-9c6d-43026b2d7c3b")
-		(property "Reference" "R37"
+		(property "Reference" "R31"
 			(at 270.51 33.655 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13480,6 +12950,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 330Ω ±1% 0.063W   [RC0402FR-07330RL] [SMD]"
+			(at 267.97 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cc12e685-9615-4203-b549-3e49da0edb7b")
 		)
@@ -13489,7 +12970,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R37")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -13508,7 +12989,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8750840-03e1-4407-bd4a-733c29cdf611")
-		(property "Reference" "#PWR14"
+		(property "Reference" "#PWR075"
 			(at 48.26 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -13569,7 +13050,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR14")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -13587,7 +13068,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eea1612f-75b8-4023-a756-039540961b78")
-		(property "Reference" "T3"
+		(property "Reference" "T2"
 			(at 102.87 43.815 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13698,6 +13179,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "TRANSISTOR:   BJT NPN 45V 0.1A   [BC850C,215] [SOT-23-3]"
+			(at 97.79 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7da71bf9-846b-4493-a6b8-835200851e8a")
 		)
@@ -13710,7 +13202,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "T3")
+					(reference "T2")
 					(unit 1)
 				)
 			)
@@ -13729,7 +13221,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f6dda853-c547-4d5c-aec7-f3a18747a70a")
-		(property "Reference" "#PWR47"
+		(property "Reference" "#PWR073"
 			(at 212.09 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -13790,7 +13282,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#PWR47")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -13807,7 +13299,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f96c6638-ffad-439c-8628-2b563054ce0d")
-		(property "Reference" "#+3V5"
+		(property "Reference" "#+3V014"
 			(at 48.26 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -13880,7 +13372,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#+3V5")
+					(reference "#+3V014")
 					(unit 1)
 				)
 			)
@@ -13897,7 +13389,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fe50772b-f84d-42c5-9ac0-8a19f3fe7b1f")
-		(property "Reference" "R24"
+		(property "Reference" "R35"
 			(at 198.12 38.1 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14006,6 +13498,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 1kΩ ±1% 0.063W   [CRCW04021K00FKED] [SMD]"
+			(at 198.12 45.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "72c0f3d4-1e4b-434a-9514-a0e4cff2b585")
 		)
@@ -14015,7 +13518,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R24")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -14033,7 +13536,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff1d9340-055e-4c00-ace5-75f8a092819d")
-		(property "Reference" "R42"
+		(property "Reference" "R39"
 			(at 160.02 76.835 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14144,6 +13647,17 @@
 				)
 			)
 		)
+		(property "OEPS Description" "RESISTOR:   SMD 0402 330Ω ±1% 0.063W   [RC0402FR-07330RL] [SMD]"
+			(at 157.48 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1bb35a92-d53a-4771-bf31-b8f8814a6377")
 		)
@@ -14153,7 +13667,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "R42")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -14170,7 +13684,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ff6cf63b-2ffc-43cd-8137-aa2ee35a2856")
-		(property "Reference" "#+3V7"
+		(property "Reference" "#+3V020"
 			(at 100.33 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -14243,7 +13757,7 @@
 		(instances
 			(project "harp timestamp generator Gen3"
 				(path "/37f4656a-fc1e-403f-990e-8468cac940f2/95e2c766-f78a-424c-954a-4aa4c2912e61/d5c0e165-068a-4688-8428-6e89bf011619"
-					(reference "#+3V7")
+					(reference "#+3V020")
 					(unit 1)
 				)
 			)
