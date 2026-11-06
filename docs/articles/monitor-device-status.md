@@ -2,7 +2,7 @@
 
 The device status can be checked physically, using the [OPTION](ports-connections.md#front-panel) button and the status indicators on the front panel. The battery charge and the connected devices are also accessible from within Bonsai when you need to log them alongside your data or use the information in a workflow.
 
-This article covers how to check the battery charge, configure the battery rate, visualize the battery events, and check the connected devices in Bonsai.
+This article covers how to check the battery charge, configure the battery telemetry rate, visualize the battery events, and check the connected devices in Bonsai.
 
 The complete workflow is shown below. Copy and paste it into Bonsai to get started immediately, or build each section by following the step-by-step instructions in the following sections.
 
@@ -12,7 +12,7 @@ The complete workflow is shown below. Copy and paste it into Bonsai to get start
 
 ## Check battery charge
 
-The [`Battery`] register holds the battery voltage, averaged by the firmware over the last 16 one-second samples. It can be read on demand at any time, even when the periodic battery events (covered in the next section) are disabled.
+The [`Battery`] register holds the battery voltage, averaged by the firmware over the last 16 one-second samples. It can be read on demand at any time, even when the periodic battery events (covered in the next section) are disabled. The battery reading is reported as a [`Battery`] event, which we will cover in a later section.
 
 :::workflow
 ![Check battery charge](../workflows/monitordevicestatus-checkbattery.bonsai)
@@ -20,16 +20,14 @@ The [`Battery`] register holds the battery voltage, averaged by the firmware ove
 
 - Insert a [`KeyDown`] operator and set the `Filter` property to `A`.
 - Insert a [`CreateMessage`] operator and configure the following properties:
+    - `MessageType` - Select `Read`.
     - `Payload` - Select `BatteryPayload`.
     - `Battery` - Leave at the default, the payload value is ignored by the device for a read request.
-    - `MessageType` - Select `Read`.
 - Insert a [`MulticastSubject`] operator named `TimestampGeneratorGen3 Commands`.
-
-Run the workflow and press <kbd>A</kbd>. The device replies with the current battery voltage, which the next sections show how to visualize.
 
 ## Configure the battery rate
 
-Alternatively, you can set the [`BatteryRate`] register to make the device report the battery charge at regular intervals.
+Alternatively, you can configure [`BatteryRate`] to make the device report the [`Battery`] event at regular intervals. We will cover how to visualize the [`Battery`] event in the next section.
 
 :::workflow
 ![Configure the battery rate](../workflows/monitordevicestatus-batteryrate.bonsai)
@@ -41,31 +39,33 @@ Alternatively, you can set the [`BatteryRate`] register to make the device repor
     - `BatteryRate` - Select the reporting rate for the event (e.g. `EverySecond`). To stop the events in the future, select `Never`.
 - Insert a [`MulticastSubject`] operator named `TimestampGeneratorGen3 Commands`.
 
-Run the workflow and press <kbd>S</kbd>. The device starts reporting [`Battery`] events every second.
-
 ## Visualize battery events
 
-The Timestamp Generator Gen3 reports the battery voltage as a [`Battery`] event stream, both in reply to a read request and at the configured battery rate. The workflow below will show you how to decode and visualize the battery events:
+The device reports the battery voltage as a [`Battery`] event stream, both in reply to a read request and at the configured battery rate. The workflow below will show you how to decode and visualize the battery events:
 
 :::workflow
 ![Visualize battery events](../workflows/monitordevicestatus-battery.bonsai)
 :::
 
-- Insert a [`SubscribeSubject`] operator named `TimestampGeneratorGen3 Events`. This will listen to messages broadcast from the [`PublishSubject`] named `TimestampGeneratorGen3 Events` in the Harp device pattern.
+- Insert a [`SubscribeSubject`] operator named `TimestampGeneratorGen3 Events`.
 - Insert a [`Parse`] operator and set the `Register` property to `TimestampedBattery`.
-- Insert a [`VisualizerWindow`] operator. This will automatically open a window displaying the parsed events when the workflow starts.
+- Insert a [`VisualizerWindow`] operator.
 
-Run the workflow and press <kbd>A</kbd> to request the current battery voltage on demand, or press <kbd>S</kbd> to set the battery rate and receive a new value at regular intervals. The visualizer will display the battery voltage, in volts, followed by the timestamp on the device clock.
+Run the workflow and press <kbd>A</kbd> to request the current battery voltage on demand, or press <kbd>S</kbd> to set the battery rate and receive a new value at regular intervals. The visualizer will display:
 
-> [!WARNING]
-> **TODO**: Capture a real visualizer line (e.g. `<voltage>@<timestamp>`) from the device and add it here as a text sample.
+```text
+3.71@95.563344
+3.71@96.563344
+```
+
+The first number is the battery voltage, in volts, and the second number is the timestamp on the device clock.
 
 > [!NOTE]
 > If the [BATTERY](ports-connections.md#front-panel) switch is off or the battery isn't detected, a battery read returns zero and no events are reported.
 
 ## Check connected devices
 
-Use the [`DevicesConnected`] register to check which clock output ports (`Out0`–`Out5`) currently have a device connected.
+[`DevicesConnected`] reports which clock output ports (`Out0`–`Out5`) currently have a device connected.
 
 :::workflow
 ![Check connected devices](../workflows/monitordevicestatus-devicesconnected.bonsai)
@@ -73,9 +73,9 @@ Use the [`DevicesConnected`] register to check which clock output ports (`Out0`�
 
 - Insert a [`KeyDown`] operator and set the `Filter` property to `D`.
 - Insert a [`CreateMessage`] operator and configure the following properties:
+    - `MessageType` - Select `Read`.
     - `Payload` - Select `DevicesConnectedPayload`.
     - `DevicesConnected` - Leave at the default, the payload value is ignored by the device for a read request.
-    - `MessageType` - Select `Read`.
 - Insert a [`MulticastSubject`] operator named `TimestampGeneratorGen3 Commands`.
 
 In a separate branch:
@@ -84,7 +84,13 @@ In a separate branch:
 - Insert a [`Parse`] operator and set the `Register` property to `TimestampedDevicesConnected`.
 - Insert a [`VisualizerWindow`] operator to display the reply.
 
-Run the workflow and press <kbd>D</kbd>. The visualizer window shows the set of ports with a device connected (e.g. `Out0, Out2`), matching the **OUT** LEDs lit on the front panel.
+Run the workflow and press <kbd>D</kbd>. The visualizer will display:
+
+```text
+Out0, Out2@95.563344
+```
+
+The first part is the set of ports with a device connected, matching the **OUT** LEDs lit on the front panel, and the number is the timestamp on the device clock.
 
 [!INCLUDE [](../includes/version-footer.md)]
 

@@ -2,10 +2,10 @@
 uid: Harp.TimestampGeneratorGen3.CreateConfigPayload
 ---
 
-### Control charging manually
+### Charge or discharge the battery
 
 :::workflow
-![Control charging manually](../workflows/managebatterycharging-config.bonsai)
+![Charge or discharge the battery](../workflows/managebatterycharging-config.bonsai)
 :::
 
 ### Run battery cycle

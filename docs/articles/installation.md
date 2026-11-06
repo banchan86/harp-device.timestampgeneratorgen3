@@ -42,9 +42,6 @@ New features are added and bugs are fixed with firmware updates which are publis
 > [!TIP]
 > The hardware version is printed on the front panel of the device (e.g. `harp timestamp generator Gen3 v1.2`).
 
-> [!WARNING]
-> **TODO**: The latest release only ships a `hw1.2` firmware file. Confirm with the maintainers which file applies to hardware v1.3 (USB-C) boards and state it here.
-
 To update the firmware, use the device setup tool in Bonsai:
 
 ![Device setup tool showing the bootloader firmware update](../images/installation-firmwareupdate.jpg){width=650}
@@ -58,9 +55,6 @@ To update the firmware, use the device setup tool in Bonsai:
 7. Click "Update".
 
 After the update, the device will reboot with the new firmware and go through the [startup LED sequence](ports-connections.md#front-panel).
-
-> [!WARNING]
-> Make sure the device is running on external (USB) power during the update, not on its battery.
 
 [!INCLUDE [](../includes/version-footer.md)]
 

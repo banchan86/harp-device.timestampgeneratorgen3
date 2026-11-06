@@ -11,7 +11,7 @@ Use the [Harp device pattern](https://harp-tech.org/articles/operators.html#devi
 Check out the following in-depth guides to learn how to access the device functionality with the `Harp.TimestampGeneratorGen3` package:
 
 - [Set clock](../articles/set-clock.md)
-- [Generate timer events](../articles/generate-timer-events.md)
+- [Generate counter events](../articles/generate-counter-events.md)
 - [Monitor device status](../articles/monitor-device-status.md)
 - [Manage battery charging](../articles/manage-battery-charging.md)
 

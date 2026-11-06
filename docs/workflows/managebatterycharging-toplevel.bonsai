@@ -67,7 +67,7 @@
         <Name>TimestampGeneratorGen3 Commands</Name>
       </Expression>
       <Expression xsi:type="Annotation">
-        <Name>Control charging manually</Name>
+        <Name>Charge or discharge the battery</Name>
         <Text><![CDATA[]]></Text>
       </Expression>
       <Expression xsi:type="Combinator">

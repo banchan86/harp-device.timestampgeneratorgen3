@@ -1,6 +1,6 @@
 # Set clock
 
-In generator mode, the Timestamp Generator Gen3 sends the current time on its onboard clock to all connected devices as a synchronization signal, so setting the device clock also sets the clock of every connected device. This is useful for resetting the timestamps at the start of every experiment. Refer to the [connections](./ports-connections.md?tabs=generatormode#connections) article to set up the device in generator mode with the Harp devices it will synchronize, which we will use for the rest of these examples.
+In generator mode, the Timestamp Generator Gen3 sends the current time on its onboard clock to all connected devices as a synchronization signal, so setting the device clock also sets the clock of every connected device. This is useful for resetting the timestamps at the start of every experiment. Refer to the [connections](./ports-connections.md?tabs=generator#connections) article to set up the device in generator mode with the Harp devices it will synchronize, which we will use for the rest of these examples.
 
 This article covers how to visualize the heartbeat events to read the device clock and how to set the device clock in Bonsai.
 
@@ -26,7 +26,7 @@ By default, the Timestamp Generator Gen3 does not report the timestamps it gener
 
 - Click on the [`Device`] operator in the Harp device pattern and set the `Heartbeat` property to `Enabled`.
 
-The Timestamp Generator Gen3 reports its clock as a [`TimestampSeconds`] event stream while the heartbeat is enabled. The workflow below will show you how to decode and visualize the heartbeat events:
+The workflow below will show you how to decode and visualize the heartbeat events:
 
 :::workflow
 ![Visualize heartbeat events](../workflows/setclock-visualizeheartbeat.bonsai)
@@ -34,7 +34,7 @@ The Timestamp Generator Gen3 reports its clock as a [`TimestampSeconds`] event s
 
 - Insert a [`SubscribeSubject`] operator named `TimestampGeneratorGen3 Events`.
 - Insert a [`Parse (Harp)`] operator and set the `Register` property to `TimestampSeconds`.
-- Insert a [`VisualizerWindow`] operator. This will automatically open a window displaying the parsed events when the workflow starts.
+- Insert a [`VisualizerWindow`] operator.
 
 Run the workflow. The visualizer will display the timestamp on the device clock every second, in whole seconds:
 
@@ -45,7 +45,7 @@ Run the workflow. The visualizer will display the timestamp on the device clock 
 
 ## Set clock with KeyDown
 
-Writing to the [`TimestampSeconds`] register sets the device clock, in whole seconds.
+Writing a value to [`TimestampSeconds`] sets the device clock, in whole seconds.
 
 :::workflow
 ![Set clock with KeyDown](../workflows/setclock-clockvalue.bonsai)
@@ -55,7 +55,7 @@ Writing to the [`TimestampSeconds`] register sets the device clock, in whole sec
 - Insert a [`CreateMessage (Harp)`] operator and configure the following properties:
     - `Payload` - Select `TimestampSecondsPayload`.
     - `TimestampSeconds` - Enter `0` to reset the clock.
-- Insert a [`MulticastSubject`] operator named `TimestampGeneratorGen3 Commands`. This will send the messages to the device.
+- Insert a [`MulticastSubject`] operator named `TimestampGeneratorGen3 Commands`.
 
 Run the workflow and press <kbd>A</kbd> to set the clock. The timestamp in the visualizer window restarts from zero.
 
@@ -70,15 +70,15 @@ Run the workflow and press <kbd>A</kbd> to set the clock. The timestamp in the v
 
 ## Alternative: set clock with Timer
 
-You can replace [`KeyDown`] with other operators to set the clock with other triggers in Bonsai, for instance a [`Timer`] to send triggers after a set time has elapsed.
+You can replace [`KeyDown`] with other operators in Bonsai to set the clock with other triggers, for instance a [`Timer (Reactive)`] operator that fires after a set time has elapsed.
 
 :::workflow
 ![Alternative: set clock with Timer](../workflows/setclock-timer.bonsai)
 :::
 
-- Insert a [`Timer`] operator and configure the following properties:
+- Insert a [`Timer (Reactive)`] operator and configure the following properties:
     - `DueTime` - Set the number of seconds to wait after the workflow starts to set the clock (e.g. `00:00:02` for two seconds).
-    - `Period` - Leave this unspecified so that the [`Timer`] only triggers once.
+    - `Period` - Leave this unspecified so that the [`Timer (Reactive)`] only triggers once.
 - Insert a [`CreateMessage (Harp)`] operator and configure the following properties:
     - `Payload` - Select `TimestampSecondsPayload`.
     - `TimestampSeconds` - Enter `0` to reset the clock.
@@ -92,7 +92,7 @@ Run the workflow. The clock is set 2 seconds after the workflow starts.
 [`TimestampSeconds`]: xref:Bonsai.Harp.TimestampSeconds
 [`CreateMessage (Harp)`]: xref:Bonsai.Harp.CreateMessage
 [`KeyDown`]: xref:Bonsai.Windows.Input.KeyDown
-[`Timer`]: xref:Bonsai.Reactive.Timer
+[`Timer (Reactive)`]: xref:Bonsai.Reactive.Timer
 [`MulticastSubject`]: xref:Bonsai.Expressions.MulticastSubject
 [`Device`]: xref:Harp.TimestampGeneratorGen3.Device
 [`Parse (Harp)`]: xref:Bonsai.Harp.Parse

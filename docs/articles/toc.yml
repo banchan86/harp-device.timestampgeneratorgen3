@@ -9,7 +9,7 @@
 - name: Examples
 - href: how-the-examples-work.md
 - href: set-clock.md
-- href: generate-timer-events.md
+- href: generate-counter-events.md
 - href: monitor-device-status.md
 - href: manage-battery-charging.md
 - name: Data management
