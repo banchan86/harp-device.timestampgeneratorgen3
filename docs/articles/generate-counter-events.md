@@ -11,7 +11,7 @@ The complete workflow is shown below. Copy and paste it into Bonsai to get start
 :::
 
 > [!NOTE]
-> The [`Timer`] event is different from the [`Timer (Reactive)`] Bonsai operator used in the [Set clock](set-clock.md#alternative-set-clock-with-timer) article. The first is an event from a hardware counter on the device, whereas the second is a software trigger in Bonsai.
+> The [`Timer`] event is different from the [`Timer (Reactive)`] Bonsai operator used in the [Set clock](set-clock.md#alternative-set-clock-with-timer) article. [`Timer`] is an event from a hardware counter on the device, whereas [`Timer (Reactive)`] is a software trigger in Bonsai that uses the operating system clock to count elapsed time.
 
 > [!WARNING]
 > For the rest of these workflows, use the device-specific versions of the operators, e.g. `Device (Harp.TimestampGeneratorGen3)` instead of `Device (Harp)`. If correctly selected, the names of these operators in the workflow panel will change to reflect either the name of the device or the selected register/payload.
@@ -52,6 +52,9 @@ Run the workflow and press <kbd>A</kbd> to enable the counter. The visualizer wi
 ```
 
 The first number is the counter value, and the second number is the timestamp on the device clock.
+
+> [!NOTE]
+> To detect dropped messages, analyze the logged data to check that the counter is increasing sequentially by one without any skipped numbers.
 
 ## Set counter value
 
@@ -106,7 +109,7 @@ Run the workflow and press <kbd>D</kbd>. Each key press appears in the visualize
 ```
 
 > [!NOTE]
-> The timestamp resolution with this strategy is set by the [`TimerFrequency`] (e.g. 20 ms at 50 Hz). Use a higher frequency for finer resolution. Keep in mind, however, that Windows is not a real-time operating system, so software timestamping is not ideal for high-precision timing applications.
+> The timestamp resolution with this strategy is set by the [`TimerFrequency`] (e.g. 20 ms at 50 Hz). Use a higher frequency for finer resolution. The pairing is done in software by Bonsai, and Windows is not a real-time operating system, so it is not ideal for high-precision timing applications. For that, log the events on a hardware clock instead, such as a digital input on another Harp device.
 
 [!INCLUDE [](../includes/version-footer.md)]
 

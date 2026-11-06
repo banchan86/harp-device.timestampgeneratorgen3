@@ -1,6 +1,6 @@
 # Bonsai
 
-Bonsai is a visual reactive programming language for building interactive experiments and processing data streams in real time. It supports a growing ecosystem of hardware and software packages that are commonly used in neuroscience. This article will cover how to set up the Timestamp Generator Gen3 in Bonsai.
+Bonsai is a visual reactive programming language for building interactive experiments and processing data streams in real time. It supports a growing ecosystem of hardware and software packages that are commonly used in neuroscience. This article will cover how to start using the Timestamp Generator Gen3 in Bonsai.
 
 > [!TIP]
 > More information on Bonsai can be found in the official [documentation](https://bonsai-rx.org/docs/).
@@ -11,7 +11,7 @@ We will use an introductory example to get started with the device in Bonsai. Th
 
 Before beginning:
 - Install [Bonsai](installation.md?tabs=bonsai#software-packages) and add the `Harp.TimestampGeneratorGen3` and `Bonsai.StarterPack` packages.
-- Connect the [USB](ports-connections.md) cable to the computer.
+- Connect the [USB](ports-connections.md) cable to the computer for power and communication.
 - Launch "Bonsai" from the Windows Start menu.
 - Hover over the workflow cell below, and click on the "Copy" icon on the top right.
 - Paste the workflow into Bonsai.

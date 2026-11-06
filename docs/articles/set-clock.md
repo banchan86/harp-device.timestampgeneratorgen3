@@ -1,6 +1,6 @@
 # Set clock
 
-In generator mode, the Timestamp Generator Gen3 sends the current time on its onboard clock to all connected devices as a synchronization signal, so setting the device clock also sets the clock of every connected device. This is useful for resetting the timestamps at the start of every experiment. Refer to the [connections](./ports-connections.md?tabs=generator#connections) article to set up the device in generator mode with the Harp devices it will synchronize, which we will use for the rest of these examples.
+In generator mode, the Timestamp Generator Gen3 sends the current timestamp on its onboard clock to all connected devices as a synchronization signal, so setting the device clock also sets the clock of every connected device. This is useful for resetting the timestamps at the start of every experiment. Refer to the [connections](./ports-connections.md?tabs=generator#connections) article to set up the device in generator mode with the Harp devices it will synchronize, which we will use for the rest of these examples.
 
 This article covers how to visualize the heartbeat events to read the device clock and how to set the device clock in Bonsai.
 
@@ -70,7 +70,7 @@ Run the workflow and press <kbd>A</kbd> to set the clock. The timestamp in the v
 
 ## Alternative: set clock with Timer
 
-You can replace [`KeyDown`] with other operators in Bonsai to set the clock with other triggers, for instance a [`Timer (Reactive)`] operator that fires after a set time has elapsed.
+You can replace [`KeyDown`] with other operators in Bonsai, for instance, a [`Timer (Reactive)`] operator that sets the clock after the Bonsai workflow has been running for a certain duration. 
 
 :::workflow
 ![Alternative: set clock with Timer](../workflows/setclock-timer.bonsai)

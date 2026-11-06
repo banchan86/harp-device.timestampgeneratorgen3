@@ -15,7 +15,7 @@ This article covers the ports, controls, and status indicators on the Timestamp 
 - **~ 6 s** - Toggle between clock generator and repeater mode (see the [Connections](#connections) section). The device reboots into the new mode after the button is released.
 - **> 12 s** - Start or stop a [battery maintenance cycle](manage-battery-charging.md#run-battery-cycle) (requires external power).
 
-**BATTERY** - Connects or disconnects the internal battery. With the switch on, the device keeps the clock running when external power is removed. The switch also needs to be on to check the [battery level](./monitor-device-status.md) or for [charging](./manage-battery-charging.md).
+**BATTERY** - This switch connects or disconnects the internal battery. With the switch on, the device keeps the clock running when external power is removed, so the Harp timestamp is not reset. The switch also needs to be on to check the [battery level](./monitor-device-status.md) or for [charging](./manage-battery-charging.md).
 
 **LED PANEL** - At power-up the device runs a short LED animation (each LED lights in sequence twice, then all LEDs blink twice). It then shows the following status indicators:
 
@@ -47,13 +47,13 @@ This article covers the ports, controls, and status indicators on the Timestamp 
 
 **USB (USB-C)** - This port connects the device to the computer for communication and also provides the external power used to run the device and charge its internal battery.
 
-**CLK IN (Stereo Jack)** - When the device is configured as a repeater, it receives the Harp clock from an upstream timestamp generator or clock synchronizer on this port instead of generating its own.
+**CLK IN (Stereo Jack)** - When the device is configured as a repeater, it receives and synchronizes to the Harp clock coming from a **CLK OUT** port of another device instead of generating its own. The clock can come directly from another Harp timestamp generating device. In addition, some Harp devices do not generate a clock signal but can re-distribute the Harp clock.
 
-**CLK OUT (Stereo Jack)** - These ports distribute the Harp synchronization clock to up to 6 Harp devices. Connect each port to the clock input (**CLK IN**) port of a Harp device. The device automatically detects which ports have a device connected, reported by the corresponding **OUT** LED on the front panel.
+**CLK OUT (Stereo Jack)** - These ports distribute the Harp clock to up to 6 Harp devices. Connect each port to the clock input (**CLK IN**) port of a Harp device. The device automatically detects which ports have a device connected, reported by the corresponding **OUT** LED on the front panel.
 
 ## Connections
 
-The Timestamp Generator Gen3 can be used in one of two modes, generator or repeater, depending on the number of units and connected devices. In either mode, the device is also compatible with other Harp timestamp generators and clock synchronizers.
+The Timestamp Generator Gen3 can be used in one of two modes, generator or repeater, depending on the number of units and connected devices. In either mode, the device is also compatible with other Harp timestamp generating devices.
 
 # [Generator](#tab/generator)
 
@@ -61,10 +61,10 @@ The Timestamp Generator Gen3 can be used in one of two modes, generator or repea
 
 For synchronization of up to 6 Harp devices:
 
-1. Connect the **USB** port to the computer with a USB-C cable. The cable powers the device, charges its battery, and carries the communication with Bonsai.
+1. Connect the **USB** port to the computer with a USB-C cable. The cable powers the device, charges its battery, and carries the communication with Bonsai. The device should remain on external power during normal operation; the battery is meant to keep the clock running during a power outage.
 2. Set the device to generator mode (the default). To toggle the mode, hold the [OPTION](#front-panel) button for about 6 seconds. The **REPEAT** LED is off in generator mode.
-3. Connect each **CLK OUT** port to the **CLK IN** port of a Harp device with a stereo plug cable.
-4. Refer to the [Set clock](set-clock.md) article to set the clock of every connected device from Bonsai.
+3. Connect each **CLK OUT** port on the generator unit to the **CLK IN** port of a Harp device with a stereo plug cable.
+4. Refer to the [Set clock](set-clock.md) article to set the clock of the generator unit from Bonsai so that it propagates to every connected device.
 
 # [Repeater](#tab/repeater)
 
@@ -72,13 +72,12 @@ For synchronization of up to 6 Harp devices:
 
 For synchronization of more than 6 Harp devices:
 
-1. Connect the **USB** port of every Timestamp Generator Gen3 unit to the computer with a USB-C cable. The cable powers each unit, charges its battery, and carries the communication with Bonsai.
+1. Connect the **USB** port of every Timestamp Generator Gen3 unit to the computer with a USB-C cable. The cable powers each unit, charges its battery, and carries the communication with Bonsai. Each device should remain on external power during normal operation; the battery is meant to keep the clock running during a power outage.
 2. Set one unit to generator mode (the default). To toggle the mode, hold the [OPTION](#front-panel) button for about 6 seconds. The **REPEAT** LED is off in generator mode.
 3. Connect a **CLK OUT** port of the generator unit to the **CLK IN** port of each of the other units with a stereo plug cable.
 4. Set each of the other units to repeater mode by holding its [OPTION](#front-panel) button for about 6 seconds. The **REPEAT** LED is on in repeater mode.
 5. Connect each **CLK OUT** port of every unit to the **CLK IN** port of a Harp device with a stereo plug cable.
-6. Refer to the [Set clock](set-clock.md) article to set the clock of every connected device from Bonsai.
-
+6. Refer to the [Set clock](set-clock.md) article to set the clock of the generator unit from Bonsai so that it propagates to every connected device.
 ---
 
 [!INCLUDE [](../includes/version-footer.md)]
