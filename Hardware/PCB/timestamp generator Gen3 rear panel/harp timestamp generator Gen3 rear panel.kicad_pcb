@@ -91,7 +91,7 @@
 	(footprint "dummyfp6"
 		(layer "F.Cu")
 		(uuid "0643406a-888c-4944-bf51-0a0cd0e89263")
-		(at 198.977862 105.4)
+		(at 198.977862 105.1436)
 		(property "Reference" "UNK_HOLE_6"
 			(at 0 0 0)
 			(layer "F.SilkS")
@@ -137,7 +137,7 @@
 		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "" np_thru_hole circle
-			(at 0 -0.2564)
+			(at 0 0)
 			(size 6 6)
 			(drill 6)
 			(layers "*.Cu" "*.Mask")
@@ -148,7 +148,7 @@
 	(footprint "dummyfp1"
 		(layer "F.Cu")
 		(uuid "1e793d71-1e94-4e4e-a609-6d8bc9b89011")
-		(at 136.477862 105.4)
+		(at 136.477862 105.1436)
 		(property "Reference" "UNK_HOLE_1"
 			(at 0 0 0)
 			(layer "F.SilkS")
@@ -194,7 +194,7 @@
 		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "" np_thru_hole circle
-			(at 0 -0.2564)
+			(at 0 0)
 			(size 6 6)
 			(drill 6)
 			(layers "*.Cu" "*.Mask")
@@ -205,7 +205,7 @@
 	(footprint "dummyfp3"
 		(layer "F.Cu")
 		(uuid "38a5300f-db5b-423a-bbc0-bfdac0bf9eb1")
-		(at 161.477862 105.4)
+		(at 161.477862 105.1436)
 		(property "Reference" "UNK_HOLE_3"
 			(at 0 0 0)
 			(layer "F.SilkS")
@@ -251,7 +251,7 @@
 		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "" np_thru_hole circle
-			(at 0 -0.2564)
+			(at 0 0)
 			(size 6 6)
 			(drill 6)
 			(layers "*.Cu" "*.Mask")
@@ -262,7 +262,7 @@
 	(footprint "dummyfp4"
 		(layer "F.Cu")
 		(uuid "4cf00b2a-7704-443f-83d4-288d28c30887")
-		(at 173.977862 105.4)
+		(at 173.977862 105.1436)
 		(property "Reference" "UNK_HOLE_4"
 			(at 0 0 0)
 			(layer "F.SilkS")
@@ -308,7 +308,7 @@
 		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "" np_thru_hole circle
-			(at 0 -0.2564)
+			(at 0 0)
 			(size 6 6)
 			(drill 6)
 			(layers "*.Cu" "*.Mask")
@@ -319,7 +319,7 @@
 	(footprint "dummyfp2"
 		(layer "F.Cu")
 		(uuid "9b6a8fb4-b613-4542-a19f-ff99516b31b0")
-		(at 148.977862 105.4)
+		(at 148.977862 105.1436)
 		(property "Reference" "UNK_HOLE_2"
 			(at 0 0 0)
 			(layer "F.SilkS")
@@ -365,7 +365,7 @@
 		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "" np_thru_hole circle
-			(at 0 -0.2564)
+			(at 0 0)
 			(size 6 6)
 			(drill 6)
 			(layers "*.Cu" "*.Mask")
@@ -376,12 +376,12 @@
 	(footprint "dummyfp0"
 		(layer "F.Cu")
 		(uuid "ad647369-bc08-46c6-9336-e1bad566f79c")
-		(at 123.977862 105.4)
+		(at 123.977862 105.1436)
 		(property "Reference" "UNK_HOLE_0"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "3afcce4a-29f2-4cad-90dc-d19d6f6b3923")
+			(uuid "1a81efb1-e36c-4e86-942e-13a4d6f3416c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -391,7 +391,7 @@
 		(property "Value" ""
 			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "6bcfbdd7-c833-4921-897e-95de9bd6b0cb")
+			(uuid "84b0001c-df4a-476a-b162-2aaed19c634a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -402,7 +402,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3bea2e57-2743-4c23-bdf8-dace78c54bc5")
+			(uuid "62efad30-0351-4aa7-94e5-6366dd20bfe6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -413,7 +413,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ebe02e24-9bb4-43f2-b088-4364fc6bed1a")
+			(uuid "8cc43137-cd56-4ca1-88df-b5dc38588ba2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -422,7 +422,7 @@
 		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "" np_thru_hole circle
-			(at 0 -0.2564)
+			(at 0 0)
 			(size 6 6)
 			(drill 6)
 			(layers "*.Cu" "*.Mask")
@@ -433,7 +433,7 @@
 	(footprint "dummyfp5"
 		(layer "F.Cu")
 		(uuid "f622935f-7573-41a9-9361-ebca37b4e445")
-		(at 186.477862 105.4)
+		(at 186.477862 105.1436)
 		(property "Reference" "UNK_HOLE_5"
 			(at 0 0 0)
 			(layer "F.SilkS")
@@ -479,7 +479,7 @@
 		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(pad "" np_thru_hole circle
-			(at 0 -0.2564)
+			(at 0 0)
 			(size 6 6)
 			(drill 6)
 			(layers "*.Cu" "*.Mask")
