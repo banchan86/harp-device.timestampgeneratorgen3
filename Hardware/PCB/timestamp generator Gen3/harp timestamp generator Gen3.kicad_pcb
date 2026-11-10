@@ -41868,7 +41868,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "O 32,0-JT32C-A-K-3,3-LF"
+		(property "Value" "ECS-TXO-3225MV-320-TR"
 			(at -2.36 2.98 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41903,7 +41903,7 @@
 				)
 			)
 		)
-		(property "MPN" "O 32,0-JT32C-A-K-3,3-LF"
+		(property "MPN" "ECS-TXO-3225MV-320-TR"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41916,7 +41916,7 @@
 				)
 			)
 		)
-		(property "OEPSPN" "OEPS080014"
+		(property "OEPSPN" "OEPS080257"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41968,7 +41968,7 @@
 				)
 			)
 		)
-		(property "OEPS Description" "IC:   XTAL OSC TCXO 32MHz HCMOS 2.5ppm   [O 32,0-JT32C-A-K-3,3-LF] [4-SMD]"
+		(property "OEPS Description" "IC:   XTAL OSC TCXO 32MHz HCMOS 2.5ppm   [ECS-TXO-3225MV-320-TR] [4-SMD]"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
