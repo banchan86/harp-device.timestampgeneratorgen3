@@ -1,0 +1,38 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,10.0.3*%
+%TF.CreationDate,2026-11-10T18:30:21+00:00*%
+%TF.ProjectId,harp timestamp generator Gen3 rear panel,68617270-2074-4696-9d65-7374616d7020,rev?*%
+%TF.SameCoordinates,PX4e14cb4PY74f31c8*%
+%TF.FileFunction,Soldermask,Bot*%
+%TF.FilePolarity,Negative*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 10.0.3) date 2026-11-10 18:30:21*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10C,6.000000*%
+G04 APERTURE END LIST*
+D10*
+%TO.C,UNK_HOLE_6*%
+X117103762Y17487000D03*
+%TD*%
+%TO.C,UNK_HOLE_0*%
+X42103762Y17487000D03*
+%TD*%
+%TO.C,UNK_HOLE_1*%
+X54603762Y17487000D03*
+%TD*%
+%TO.C,UNK_HOLE_3*%
+X79603762Y17487000D03*
+%TD*%
+%TO.C,UNK_HOLE_4*%
+X92103762Y17487000D03*
+%TD*%
+%TO.C,UNK_HOLE_2*%
+X67103762Y17487000D03*
+%TD*%
+%TO.C,UNK_HOLE_5*%
+X104603762Y17487000D03*
+%TD*%
+M02*

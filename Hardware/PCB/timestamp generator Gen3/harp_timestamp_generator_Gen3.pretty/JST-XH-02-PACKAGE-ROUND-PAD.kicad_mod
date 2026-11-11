@@ -1,0 +1,161 @@
+(footprint "JST-XH-02-PACKAGE-ROUND-PAD"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "JST XH Connector Round Pads (Package)\n\nWire to board connector.  Pitch: 2,54 mm, (0.100\")\n\nNumber of pins: 2  Created by Rembrandt Electronics\n\nwww.rembrandtelectronics.com")
+	(property "Reference" "REF**"
+		(at 4.945 2.44 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a901efac-2209-4d30-82e0-8881ec5f3a0d")
+		(effects
+			(font
+				(size 0.67564 0.67564)
+				(thickness 0.13716)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Value" "B2B-PH-K-S(LF)(SN)"
+		(at -3.3025 -3.8925 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "c03f2105-a390-4577-a39b-ac83425a560e")
+		(effects
+			(font
+				(size 0.92456 0.92456)
+				(thickness 0.09144)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f0da0908-d1f9-4bd9-8398-5669c6fd1494")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3359f11e-345e-4f5d-951f-dac650101550")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -3.7 -3.3925)
+		(end -3.7 2.3575)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "333ba96e-92a8-4d0a-bb7c-cf273166e7ee")
+	)
+	(fp_line
+		(start -3.7 2.3575)
+		(end 3.7 2.3575)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3145910e-b28d-4745-b89e-a3074b062404")
+	)
+	(fp_line
+		(start -1.3 1.8)
+		(end 1.3 1.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5ba5002b-a423-4bd3-b96d-7590036a747c")
+	)
+	(fp_line
+		(start -1.3 2.3)
+		(end -1.3 1.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b9d40882-03a0-4000-8271-4ad64d231815")
+	)
+	(fp_line
+		(start 1.3 2.3)
+		(end 1.3 1.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0349eeff-f530-4a7e-9a59-d5247daddd4f")
+	)
+	(fp_line
+		(start 3.7 -3.3925)
+		(end -3.7 -3.3925)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d91c7a85-0fe9-45eb-b1a7-dff73e3dd54c")
+	)
+	(fp_line
+		(start 3.7 2.3575)
+		(end 3.7 -3.3925)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "de4a3b8a-4d44-4e59-9f5a-73e5a9245b95")
+	)
+	(fp_text user "1"
+		(at -2.8675 1.4875 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0154fc70-ecc9-4e32-89db-d35455c00e7b")
+		(effects
+			(font
+				(size 0.9144 0.9144)
+				(thickness 0.1016)
+			)
+			(justify left bottom)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -1.27 0 90)
+		(size 1.524 1.524)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "0a8c6b6d-0868-4218-ad57-5ce0ddf1e57c")
+	)
+	(pad "2" thru_hole circle
+		(at 1.27 0 90)
+		(size 1.524 1.524)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "cf3186d3-4f4e-453a-bee5-64440963df41")
+	)
+	(embedded_fonts no)
+)

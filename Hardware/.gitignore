@@ -1,51 +1,19 @@
-# Ignore list for Eagle, a PCB layout tool
+# KiCad temporary and local preference files
+*.kicad_prl
+*.bak
+*-bak
+*-backups/
+fp-info-cache
 
-# Backup files
-*.s#?
-*.b#?
-*.l#?
-*.b$?
-*.s$?
-*.l$?
+# Editor and tool history
+.history/
 
-# Eagle project file
-# It contains a serial number and references to the file structure
-# on your computer.
-# comment the following line if you want to have your project file included.
-eagle.epf
+# KiCad manufacturing outputs (optional but highly recommended to ignore)
+# Remove the # if you want to ignore them
+#*.gbr
+#*.rpt
+#*.bcm
 
-# Autorouter files
-*.pro
-*.job
-
-# CAM files
-*.$$$
-*.cmp
-*.ly2
-*.l15
-*.sol
-*.plc
-*.stc
-*.sts
-*.crc
-*.crs
-
-*.dri
-*.drl
-*.gpi
-*.pls
-*.ger
-*.xln
-
-*.drd
-*.drd.*
-
-*.s#*
-*.b#*
-
-*.info
-
-*.eps
-
-# file locks introduced since 7.x
-*.lck
+# Netlists and CAD exports
+*.net
+*.dxf

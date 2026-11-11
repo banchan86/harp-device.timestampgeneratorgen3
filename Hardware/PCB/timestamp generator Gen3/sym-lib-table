@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "harp_timestamp_generator_Gen3") (type "KiCad") (uri "${KIPRJMOD}/harp_timestamp_generator_Gen3.kicad_sym") (options "") (descr ""))
+)
