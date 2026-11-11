@@ -2,6 +2,8 @@
 #include "hwbp_core_regs.h"
 #include "hwbp_core_types.h"
 
+#include "uart0_ctrl.h"
+
 #include "app.h"
 #include "app_funcs.h"
 #include "app_ios_and_regs.h"
@@ -30,7 +32,7 @@ void hwbp_app_initialize(void)
     uint8_t hwH = 1;
     uint8_t hwL = 2;
     uint8_t fwH = 1;
-    uint8_t fwL = 3;
+    uint8_t fwL = 4;
     uint8_t ass = 0;
     
    	/* Start core */
@@ -138,8 +140,8 @@ void core_callback_reset_registers(void)
 	/* Initialize registers */
 	app_regs.REG_BATTERY_RATE = MSK_EACH_60SECONDS;
 	
-	app_regs.REG_BATTERY_TH_HIGH = 3.75;
-	app_regs.REG_BATTERY_TH_LOW = 3.65;
+	app_regs.REG_BATTERY_TH_HIGH = 3.80;
+	app_regs.REG_BATTERY_TH_LOW = 3.70;
 }
 
 void core_callback_registers_were_reinitialized(void)
@@ -210,8 +212,8 @@ uint16_t battery_indication_ms = 0;
 #define BATTERY_INDICATION_BLINK_MS 200
 
 #define BATTERY_CHARGED_TH 4.1
-#define BATTERY_DISCHARGED_TH 3.35
-#define BATTERY_DISCHARGED_DEPLETED 3.25
+#define BATTERY_DISCHARGED_TH 3.6
+#define BATTERY_DISCHARGED_DEPLETED 3.4	// Used when the device don't have the 3.5V shutdown threshold by hardware.
 
 extern uint8_t battery_mode;
 extern uint8_t battery_cycle_state;
@@ -232,6 +234,9 @@ void core_callback_t_before_exec(void)
 	}
 }
 void core_callback_t_after_exec(void) {}
+
+uint8_t prev_power_good = 0;
+
 void core_callback_t_new_second(void)
 {	
 	if (counter >= 4000)
@@ -239,6 +244,19 @@ void core_callback_t_new_second(void)
 	
 	set_BAT_READ;
 	read_battery = true;
+	
+	// These will remove voltage from pin TXD0 PE3 and 
+	if ((read_POWER_GOOD == 0) && (prev_power_good == 1))
+	{
+		uart0_restore();
+		prev_power_good = 0;
+	}
+	if ((read_POWER_GOOD != 0) && (prev_power_good == 0))
+	{
+		uart0_disable_and_tx_to_low();
+		prev_power_good = 1;
+	}
+	
 	
 	timer_counter = 0;
 }
