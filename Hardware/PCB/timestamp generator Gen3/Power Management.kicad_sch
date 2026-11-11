@@ -4356,6 +4356,19 @@
 		)
 		(uuid "62d9ce3b-edae-4b4b-b587-f244e44bce0f")
 	)
+	(text "This circuit is not functional because the Q3's body\ndiode can conduct from VBatt into the 3.3 V rail\nthrough R12 when VBatt exceeds that rail sufficiently."
+		(exclude_from_sim no)
+		(at 218.948 147.828 0)
+		(effects
+			(font
+				(size 1.778 1.5113)
+				(thickness 0.3023)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "7c7a3cd4-e035-4593-b144-aa24e1ec83ee")
+	)
 	(text "to uC ADC"
 		(exclude_from_sim no)
 		(at 134.366 181.356 0)
@@ -6391,7 +6404,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "067bd15c-0d7d-4c19-8dfb-e07c6292c51a")
 		(property "Reference" "R11"
 			(at 241.554 109.982 0)
@@ -6789,7 +6802,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "10b9dcd4-9330-4234-937f-ae5003e5fb1e")
 		(property "Reference" "Q3"
 			(at 260.604 118.872 0)
@@ -6802,7 +6815,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "RTU002P02T106"
+		(property "Value" "PJC7401_R1_00001"
 			(at 259.588 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6846,7 +6859,7 @@
 				)
 			)
 		)
-		(property "MPN" "RTU002P02T106"
+		(property "MPN" "PJC7401_R1_00001"
 			(at 254 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -6858,7 +6871,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "OEPSPN" "OEPS060009"
+		(property "OEPSPN" "OEPS060026"
 			(at 254 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -6902,7 +6915,7 @@
 				)
 			)
 		)
-		(property "OEPS Description" "TRANSISTOR:   MOSFET P-CH 20V 250mA   [RTU002P02T106] [SOT-323]"
+		(property "OEPS Description" "TRANSISTOR:   MOSFET P-CH 30V 1.5A   [PJC7401_R1_00001] [SOT-323]"
 			(at 254 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -9024,7 +9037,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "4b6fd410-5eb5-4aa9-87ac-c195298a85b2")
 		(property "Reference" "R12"
 			(at 262.128 131.064 90)
@@ -16653,7 +16666,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "RTU002P02T106"
+		(property "Value" "PJC7401_R1_00001"
 			(at 108.712 160.528 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16697,7 +16710,7 @@
 				)
 			)
 		)
-		(property "MPN" "RTU002P02T106"
+		(property "MPN" "PJC7401_R1_00001"
 			(at 107.95 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -16709,7 +16722,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "OEPSPN" "OEPS060009"
+		(property "OEPSPN" "OEPS060026"
 			(at 107.95 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -16753,7 +16766,7 @@
 				)
 			)
 		)
-		(property "OEPS Description" "TRANSISTOR:   MOSFET P-CH 20V 250mA   [RTU002P02T106] [SOT-323]"
+		(property "OEPS Description" "TRANSISTOR:   MOSFET P-CH 30V 1.5A   [PJC7401_R1_00001] [SOT-323]"
 			(at 107.95 153.67 0)
 			(hide yes)
 			(show_name no)
