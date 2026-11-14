@@ -10,6 +10,19 @@ title: Registers
   <dl><div><dt>Log files</dt><dd><code>TimestampGeneratorGen3_&lt;address&gt;.bin</code></dd></div></dl>
 </div>
 
+Use the [Harp device pattern](https://harp-tech.org/articles/operators.html#device-pattern) to initialize the device, log data, and send commands to and receive messages from the Timestamp Generator Gen3.
+
+:::workflow
+![Harp device pattern](../workflows/harp-devicepattern.bonsai)
+:::
+
+Check out the following in-depth guides to learn how to access the device functionality with the `Harp.TimestampGeneratorGen3` package:
+
+- [Set clock](../articles/set-clock.md)
+- [Generate counter events](../articles/generate-counter-events.md)
+- [Monitor device status](../articles/monitor-device-status.md)
+- [Manage battery charging](../articles/manage-battery-charging.md)
+
 ## Registers
 
 The core registers implemented by every Harp device, such as `WhoAmI` and `OperationControl`, are described in the [Device Registers and Operation specification](https://harp-tech.org/protocol/Device.html).
