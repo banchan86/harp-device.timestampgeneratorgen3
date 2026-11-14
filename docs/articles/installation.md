@@ -43,10 +43,10 @@ pip install harp-data
 
 ## Firmware update
 
-New features are added and bugs are fixed with firmware updates which are published on the [release page](https://github.com/harp-tech/device.timestampgeneratorgen3/releases) in the device GitHub repository. Each release contains a `.hex` file tagged with the firmware (`fw`) and hardware (`hw`) version. For instance, `TimestampGeneratorGen3-fw1.3-harp1.15-hw1.2-ass0.hex` is firmware v1.3 for a hardware v1.2 Timestamp Generator Gen3. Download the latest firmware version that matches the [hardware version](timestampgeneratorgen3.md#hardware) of the board from the "Assets" section under each release.
+New features are added and bugs are fixed with firmware updates which are published on the [release page](https://github.com/harp-tech/device.timestampgeneratorgen3/releases) in the device GitHub repository. Each release contains a `.hex` file tagged with the firmware (`fw`) and hardware (`hw`) version. For instance, `TimestampGeneratorGen3-fw1.4-harp1.15-hw1.4-ass0.hex` is firmware v1.4 for a hardware v1.4 Timestamp Generator Gen3. Download the latest firmware version that matches the [hardware version](timestampgeneratorgen3.md#hardware) of the board from the "Assets" section under each release.
 
 > [!TIP]
-> The hardware version is printed on the front panel of the device (e.g. `harp timestamp generator Gen3 v1.2`).
+> The hardware version is printed on the front panel of the device (e.g. `harp timestamp generator Gen3 v1.4`).
 
 To update the firmware, use the device setup tool in Bonsai:
 

@@ -19,14 +19,15 @@
 - Synchronization accuracy: 22 ± 16 µs
 - Battery capacity: 2 Ah (lithium polymer)
 - Battery runtime: up to 24 h
-- Battery default charging thresholds: 3.65–3.75 V ([configurable](manage-battery-charging.md))
-- Battery charging safety limits: 3.35–4.1 V (charging starts or stops automatically when the battery reaches these limits, regardless of the configured thresholds)
-- Battery depleted limit: 3.25 V (the device shuts down automatically, or refuses to start up, without external power)
+- Battery default charging thresholds: 3.7–3.8 V ([configurable](manage-battery-charging.md))
+- Battery charging safety limits: 3.6–4.1 V (charging starts or stops automatically when the battery reaches these limits, regardless of the configured thresholds)
+- Battery depleted limit: 3.5 V (the battery protection circuit shuts the device down, or keeps it from starting up, without external power)
 
 ## Hardware
 
 | Version | Notes |
 | ------- | ----- |
+| 1.4 | <ul><li> Added a battery protection circuit that shuts the device down when the battery drops below 3.5 V </li></ul> |
 | 1.3 | <ul><li> Changed the USB Mini-B connector to USB-C </li></ul> |
 | 1.2 | <ul><li> Initial version </li></ul> |
 
@@ -34,6 +35,7 @@
 
 | Version | Notes |
 | ------- | ----- |
+| 1.4 | <ul><li> Suspended the serial port while the device runs without USB power </li><li> Raised the battery voltage thresholds </li></ul> |
 | 1.3 | <ul><li> Raised the Harp core to 1.15 </li></ul> |
 | 1.2 | <ul><li> Added a unitary periodic counter </li><li> Implemented and exposed the connected devices register in `device.yml` </li></ul> |
 | 1.1 | <ul><li> Added a prototype device schema and interface </li><li> Fixed the charge/discharge stop command </li><li> Updated the interface to use the new generators </li><li> Raised the Harp core to 1.13 </li></ul> |

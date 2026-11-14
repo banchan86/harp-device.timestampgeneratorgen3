@@ -51,7 +51,7 @@
       <Expression xsi:type="p1:CreateMessage">
         <harp:MessageType>Write</harp:MessageType>
         <harp:Payload xsi:type="p1:CreateBatteryThresholdLowPayload">
-          <p1:BatteryThresholdLow>3.55</p1:BatteryThresholdLow>
+          <p1:BatteryThresholdLow>3.65</p1:BatteryThresholdLow>
         </harp:Payload>
       </Expression>
       <Expression xsi:type="MulticastSubject">

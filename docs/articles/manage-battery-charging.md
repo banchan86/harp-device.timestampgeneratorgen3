@@ -18,7 +18,7 @@ The complete workflow is shown below. Copy and paste it into Bonsai to get start
 
 ## Set charging thresholds
 
-Configure [`BatteryThresholdLow`] and [`BatteryThresholdHigh`] to set the voltages (in volts) at which automatic charging starts and stops. The defaults are 3.65 V and 3.75 V respectively.
+Configure [`BatteryThresholdLow`] and [`BatteryThresholdHigh`] to set the voltages (in volts) at which automatic charging starts and stops. The defaults are 3.7 V and 3.8 V respectively.
 
 :::workflow
 ![Set charging thresholds](../workflows/managebatterycharging-thresholds.bonsai)
@@ -27,7 +27,7 @@ Configure [`BatteryThresholdLow`] and [`BatteryThresholdHigh`] to set the voltag
 - Insert a [`KeyDown`] operator and set the `Filter` property to `A`.
 - Insert a [`CreateMessage`] operator and configure the following properties:
     - `Payload` - Select `BatteryThresholdLowPayload`.
-    - `BatteryThresholdLow` - Enter the voltage below which charging starts (e.g. `3.55`).
+    - `BatteryThresholdLow` - Enter the voltage below which charging starts (e.g. `3.65`).
 - Insert a [`MulticastSubject`] operator named `TimestampGeneratorGen3 Commands`.
 - Insert a second [`CreateMessage`] operator and configure the following properties:
     - `Payload` - Select `BatteryThresholdHighPayload`.
@@ -37,7 +37,7 @@ Configure [`BatteryThresholdLow`] and [`BatteryThresholdHigh`] to set the voltag
 Run the workflow and press <kbd>A</kbd> to write both thresholds. You can confirm the values by checking the [battery charge or battery rate](monitor-device-status.md) events.
 
 > [!NOTE]
-> The firmware enforces hard safety limits regardless of the configured thresholds: charging always starts below 3.35 V and always stops above 4.1 V. Keep the automatic charging thresholds near the middle of this range to extend battery life.
+> The firmware enforces hard safety limits regardless of the configured thresholds: charging always starts below 3.6 V and always stops above 4.1 V. Keep the automatic charging thresholds near the middle of this range to extend battery life.
 
 ## Charge or discharge the battery
 
@@ -68,7 +68,7 @@ Run the workflow and press <kbd>S</kbd> or <kbd>D</kbd> to charge or discharge t
 
 ## Run battery cycle
 
-Running a battery cycle occasionally helps to extend the battery life. The battery cycle discharges the battery to the lower safety limit (3.35 V), charges it to the upper safety limit (4.1 V), and then discharges it back down to the high charging threshold (3.75 V by default) before resuming automatic control. The battery cycle is also controlled by sending [`Config`] commands.
+Running a battery cycle occasionally helps to extend the battery life. The battery cycle discharges the battery to the lower safety limit (3.6 V), charges it to the upper safety limit (4.1 V), and then discharges it back down to the high charging threshold (3.8 V by default) before resuming automatic control. The battery cycle is also controlled by sending [`Config`] commands.
 
 :::workflow
 ![Run battery cycle](../workflows/managebatterycharging-cycle.bonsai)

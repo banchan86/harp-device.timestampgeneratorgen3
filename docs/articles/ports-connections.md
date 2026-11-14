@@ -36,7 +36,7 @@ This article covers the ports, controls, and status indicators on the Timestamp 
 
     <br>If the device has a low battery, the LED also flashes rapidly (5 Hz for 2 seconds) after the startup sequence.
 
-- **ON** - On when the device is running from external (USB) power and off when running from the battery. If the battery becomes depleted (≤ 3.25 V) with no external power, the LED blinks for a couple of seconds and the device turns itself off to protect the battery.
+- **ON** - On when the device is running from external (USB) power and off when running from the battery. If the battery becomes depleted (below 3.5 V) with no external power, the device shuts down to protect the battery.
 
 > [!NOTE]
 > When running from the battery, some of the indicator LEDs only flash briefly every few seconds to save power. The panel appearing mostly dark is normal in battery operation.
