@@ -1,0 +1,159 @@
+%YAML 1.1
+---
+# yaml-language-server: $schema=https://harp-tech.org/draft-02/schema/ios.json
+DEVICE_AT_4:
+  port: PORTA
+  pinNumber: 2
+  direction: input
+  pinMode: tristate
+  triggerMode: none
+  description: Device is connected to CLKOUT4
+DEVICE_AT_5:
+  port: PORTA
+  pinNumber: 3
+  direction: input
+  pinMode: tristate
+  triggerMode: none
+  description: Device is connected to CLKOUT5
+DEVICE_AT_2:
+  port: PORTA
+  pinNumber: 4
+  direction: input
+  pinMode: tristate
+  triggerMode: none
+  description: Device is connected to CLKOUT2
+POWER_GOOD:
+  port: PORTB
+  pinNumber: 0
+  direction: input
+  pinMode: pullup
+  triggerMode: toggle
+  interruptPriority: low
+  interruptNumber: 0
+  description: Detects the presence of the USB power
+BUTTON:
+  port: PORTB
+  pinNumber: 3
+  direction: input
+  pinMode: tristate
+  triggerMode: toggle
+  description: User's input button
+DEVICE_AT_0:
+  port: PORTC
+  pinNumber: 6
+  direction: input
+  pinMode: tristate
+  triggerMode: none
+  description: Device is connected to CLKOUT0
+DEVICE_AT_1:
+  port: PORTC
+  pinNumber: 7
+  direction: input
+  pinMode: tristate
+  triggerMode: none
+  description: Device is connected to CLKOUT1
+DEVICE_AT_3:
+  port: PORTR
+  pinNumber: 0
+  direction: input
+  pinMode: tristate
+  triggerMode: none
+  description: Device is connected to CLKOUT3
+BAT_READ:
+  port: PORTA
+  pinNumber: 1
+  direction: output
+  allowRead: true
+  initialState: low
+EN_SCREEN_BACKLIGHT:
+  port: PORTA
+  pinNumber: 5
+  direction: output
+  allowRead: true
+  initialState: low
+LED_CLK_4:
+  port: PORTA
+  pinNumber: 6
+  direction: output
+  allowRead: true
+  initialState: low
+LED_CLK_1:
+  port: PORTA
+  pinNumber: 7
+  direction: output
+  allowRead: true
+  initialState: low
+EN_CHARGE:
+  port: PORTB
+  pinNumber: 1
+  direction: output
+  allowRead: true
+  initialState: low
+EN_DISCHARGE:
+  port: PORTB
+  pinNumber: 2
+  direction: output
+  allowRead: true
+  initialState: low
+LED_CLK_0:
+  port: PORTC
+  pinNumber: 0
+  direction: output
+  allowRead: true
+  initialState: low
+LED_CLK_3:
+  port: PORTC
+  pinNumber: 1
+  direction: output
+  allowRead: true
+  initialState: low
+LED_CLK_2:
+  port: PORTC
+  pinNumber: 4
+  direction: output
+  allowRead: true
+  initialState: low
+LED_CLK_5:
+  port: PORTC
+  pinNumber: 5
+  direction: output
+  allowRead: true
+  initialState: low
+LED_POWER:
+  port: PORTD
+  pinNumber: 0
+  direction: output
+  allowRead: true
+  initialState: low
+EN_CLOCK_OUT:
+  port: PORTD
+  pinNumber: 1
+  direction: output
+  allowRead: true
+  initialState: low
+  invert: true
+EN_CLOCK_IN:
+  port: PORTD
+  pinNumber: 2
+  direction: output
+  allowRead: true
+  initialState: high
+  invert: true
+LED_REPEATER:
+  port: PORTD
+  pinNumber: 3
+  direction: output
+  allowRead: true
+  initialState: low
+LED_LOCK:
+  port: PORTD
+  pinNumber: 4
+  direction: output
+  allowRead: true
+  initialState: low
+LED_STATE:
+  port: PORTD
+  pinNumber: 5
+  direction: output
+  allowRead: true
+  initialState: low

@@ -24,6 +24,7 @@ registers:
     access: Write
     maskType: RepeaterFlags
     description: Check whether device is a repeater or spreading internal timestamp
+    visibility: private
   BatteryRate:
     address: 35
     type: U8
@@ -49,10 +50,12 @@ registers:
     address: 39
     type: U16
     access: Write
+    visibility: private
   BatteryCalibration1:
     address: 40
     type: U16
     access: Write
+    visibility: private
   Timer:
     address: 41
     type: U32

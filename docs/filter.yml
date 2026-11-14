@@ -1,0 +1,10 @@
+apiRules:
+- exclude:
+    hasAttribute:
+      uid: System.ObsoleteAttribute
+- include:
+    uidRegex: ^Harp\.TimestampGeneratorGen3\.(AsyncDevice|CreateMessage|DeviceDataWriter|FilterRegister|Format|GetDeviceMetadata|GroupByRegister|Parse)$
+    type: Type
+- exclude:
+    uidRegex: ^Harp\.TimestampGeneratorGen3\.[^.]+$
+    type: Type

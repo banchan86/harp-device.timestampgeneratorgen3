@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <PackageTags>Harp Timestamp Generator Gen3</PackageTags>
+    <PackageProjectUrl>https://harp-tech.org/device.timestampgeneratorgen3</PackageProjectUrl>
+
+    <Authors>harp-tech</Authors>
+    <Copyright>Copyright © harp-tech and Contributors</Copyright>
+  </PropertyGroup>
+</Project>
