@@ -21,7 +21,7 @@ Before beginning:
 :::
 
 > [!TIP]
-> If your workflow does not look like the one above, make sure that the [Harp.TimestampGeneratorGen3 and Bonsai.StarterPack](./installation.md#software-packages) packages are installed.
+> If your workflow does not look like the one above, make sure that the [`Harp.TimestampGeneratorGen3` and `Bonsai.StarterPack`](./installation.md#software-packages) packages are installed.
 
 - Click on the [`TimestampGeneratorGen3 (Device)`] operator and set the `PortName` property to the communications port for the device (e.g. `COM8`).
 - Click on the [`TimestampGeneratorGen3DataWriter (DeviceDataWriter)`] operator and set the `Path` property for the name and location of the save folder (e.g. `TimestampGeneratorGen3.harp`).
@@ -34,7 +34,7 @@ A [visualizer](xref:Bonsai.Design.VisualizerWindow) will automatically open when
 346
 ```
 
-The device is ready to use! If, instead, an error appears in Bonsai, check out the [troubleshooting](errors.md) section.
+The device is ready to use. If, instead, an error appears in Bonsai, check out the [troubleshooting](errors.md) section.
 
 Next, we suggest going through the "Examples" section if you are not familiar with using Harp devices in Bonsai.
 

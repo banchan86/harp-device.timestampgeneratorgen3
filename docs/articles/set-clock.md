@@ -14,7 +14,7 @@ The complete workflow is shown below. Copy and paste it into Bonsai to get start
 > Reading and setting the device clock is a core functionality shared by all Harp devices. Thus, the operators marked with a `(Harp)` suffix in this article come from the `Bonsai.Harp` base library (installed automatically as a dependency) instead of the device-specific package.
 
 > [!WARNING]
-> The internal clock also resets if the device is powered off (if it is disconnected from USB while the [BATTERY](ports-connections.md#front-panel) switch is off or if the battery is depleted).
+> The internal clock also resets whenever the device restarts, including after switching between generator and repeater mode with the [OPTION](ports-connections.md#front-panel) button, and if the device is powered off (if it is disconnected from USB while the [BATTERY](ports-connections.md#front-panel) switch is off or if the battery is depleted).
 
 ## Visualize heartbeat events
 
@@ -64,8 +64,8 @@ Run the workflow and press <kbd>A</kbd> to set the clock. The timestamp in the v
 >```text
 >Runtime error
 >
->The device reported an erroneous write command. 
->Payload 0, Address: 8, Type: U32
+>The device reported an erroneous write command.
+>Payload: 0, Address: 8, Type: U32.
 >```
 
 ## Alternative: set clock with Timer

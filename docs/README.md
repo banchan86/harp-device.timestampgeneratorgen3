@@ -1,6 +1,6 @@
 # Harp Timestamp Generator Gen3
 
-The Harp Timestamp Generator Gen3 is a clock synchronization device for the Harp ecosystem. It distributes the Harp timestamp to up to six Harp devices so that their data share a common timeline, can be daisy-chained as a repeater for larger setups, and has an internal battery that keeps the clock running when external power is lost.
+The Harp Timestamp Generator Gen3 is a clock synchronization device for the Harp ecosystem. It distributes the Harp timestamp to up to six Harp devices so that their data are timestamped on the same clock, can be daisy-chained as a repeater for larger setups, and has an internal battery that keeps the clock running when external power is lost.
 
 ![Harp Timestamp Generator Gen3](./images/timestampgeneratorgen3-landing.svg)
 
