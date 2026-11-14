@@ -43,14 +43,35 @@ pip install harp-data
 
 ## Firmware update
 
-New features are added and bugs are fixed with firmware updates which are published on the [release page](https://github.com/harp-tech/device.timestampgeneratorgen3/releases) in the device GitHub repository. Each release contains a `.hex` file tagged with the firmware (`fw`) and hardware (`hw`) version. For instance, `TimestampGeneratorGen3-fw1.4-harp1.15-hw1.4-ass0.hex` is firmware v1.4 for a hardware v1.4 Timestamp Generator Gen3. Download the latest firmware version that matches the [hardware version](timestampgeneratorgen3.md#hardware) of the board from the "Assets" section under each release.
+New features are added and bugs are fixed with firmware updates which are published on the [release page](https://github.com/harp-tech/device.timestampgeneratorgen3/releases) in the device GitHub repository. Each release contains a `.hex` file tagged with the firmware (`fw`) and hardware (`hw`) version. For instance, `TimestampGeneratorGen3-fw1.4-harp1.15-hw1.4-ass0.hex` is firmware v1.4 for a hardware v1.4 Timestamp Generator Gen3. Download the latest firmware version that matches the [hardware version](timestampgeneratorgen3.md#hardware) of the device from the "Assets" section under each release.
 
 > [!TIP]
 > The hardware version is printed on the front panel of the device (e.g. `harp timestamp generator Gen3 v1.4`).
 
-To update the firmware, use the device setup tool in Bonsai:
+The firmware can be updated from a terminal with the Harp Toolkit, or from the device setup dialog in Bonsai.
 
-![Device setup tool showing the bootloader firmware update](../images/installation-firmwareupdate.jpg){width=650}
+# [Toolkit](#tab/toolkit)
+
+The [Harp Toolkit](https://harp-tech.org/toolkit/) is a command-line tool for working with Harp devices. It is distributed as a .NET tool.
+
+- Download and install the [.NET SDK](https://dotnet.microsoft.com/download), version 8 or later.
+- Install the toolkit from a terminal with:
+
+```cmd
+dotnet tool install -g Harp.Toolkit
+```
+
+- Update the firmware with the serial port of the device and the downloaded `.hex` file:
+
+```cmd
+harp.toolkit update --port COM3 TimestampGeneratorGen3-fw1.4-harp1.15-hw1.4-ass0.hex
+```
+
+The toolkit checks that the file matches the device before writing it, and waits for the device to restart with the new firmware. Run `harp.toolkit list` to find the serial port of the device. The toolkit [firmware update](https://harp-tech.org/toolkit/articles/update.html) documentation describes every option.
+
+# [Bonsai](#tab/device-setup)
+
+![Device setup](../images/installation-firmwareupdate.jpg){width=650}
 
 1. Add the [`Device`] operator in Bonsai.
 2. Double-click on the [`Device`] node while the workflow is not running.
@@ -61,6 +82,8 @@ To update the firmware, use the device setup tool in Bonsai:
 7. Click "Update".
 
 After the update, the device will reboot with the new firmware and go through the [startup LED sequence](ports-connections.md#front-panel).
+
+***
 
 [!INCLUDE [](../includes/version-footer.md)]
 
