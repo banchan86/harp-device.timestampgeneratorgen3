@@ -1,6 +1,6 @@
 # Overview
 
-The Harp [Timestamp Generator Gen3](articles/timestampgeneratorgen3.md) is a clock synchronization device for the [Harp ecosystem](https://harp-tech.org/articles/about.html).
+The Harp [Timestamp Generator Gen3](articles/device.md) is a clock synchronization device for the [Harp ecosystem](https://harp-tech.org/articles/about.html).
 
 ![Harp Timestamp Generator Gen3 connected to a PC and to Harp devices](./images/timestampgeneratorgen3-landing.svg)
 

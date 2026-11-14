@@ -1,3 +1,7 @@
+---
+title: Device
+---
+
 # Timestamp Generator Gen3
 
 ![Harp Timestamp Generator Gen3](../images/timestampgeneratorgen3.jpg){width=450}

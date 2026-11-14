@@ -1,7 +1,7 @@
 - name: Introduction
 - href: ../index.md
 - name: Specs
-- href: timestampgeneratorgen3.md
+- href: device.md
 - name: Getting started
 - href: ports-connections.md
 - href: installation.md
