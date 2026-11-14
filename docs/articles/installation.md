@@ -10,7 +10,7 @@ These steps are only required the first time you connect the device to a new com
 
 [Bonsai](https://bonsai-rx.org/) is a visual reactive programming language that provides flexible and comprehensive control of the Timestamp Generator Gen3.
 
-![Bonsai package manager](../images/installation-bonsaipackage.jpg){width=650}
+![Bonsai package manager](../images/installation-bonsaipackage.png){width=650}
 
 - Download and install [Bonsai](https://bonsai-rx.org/docs/articles/installation.html).
 - Launch Bonsai and install the `Harp.TimestampGeneratorGen3` package by searching for it in the [Bonsai package manager](https://bonsai-rx.org/docs/articles/packages.html).
@@ -71,7 +71,7 @@ The toolkit checks that the file matches the device before writing it, and waits
 
 # [Bonsai](#tab/device-setup)
 
-![Device setup](../images/installation-firmwareupdate.jpg){width=650}
+![Device setup](../images/installation-firmwareupdate.png){width=650}
 
 1. Add the [`Device`] operator in Bonsai.
 2. Double-click on the [`Device`] node while the workflow is not running.
